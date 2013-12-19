@@ -38,7 +38,7 @@
       <file leaf-file-name="wikidrain.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/wikidrain.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="21" selection-start="73" selection-end="73" vertical-scroll-proportion="0.1299639" vertical-offset="0" max-vertical-offset="554">
+            <state line="5" column="12" selection-start="86" selection-end="86" vertical-scroll-proportion="0.16245487" vertical-offset="0" max-vertical-offset="554">
               <folding />
             </state>
           </provider>
@@ -183,7 +183,11 @@
       <created>1387443277654</created>
       <updated>1387443277654</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added wikidrain class&#10;">
+      <created>1387443425572</created>
+      <updated>1387443425572</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -234,7 +238,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/wikidrain.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="21" selection-start="73" selection-end="73" vertical-scroll-proportion="0.1299639" vertical-offset="0" max-vertical-offset="554">
+        <state line="5" column="12" selection-start="86" selection-end="86" vertical-scroll-proportion="0.16245487" vertical-offset="0" max-vertical-offset="554">
           <folding />
         </state>
       </provider>
