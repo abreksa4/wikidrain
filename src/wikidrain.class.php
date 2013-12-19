@@ -38,8 +38,4 @@ class wikidrain {
         $this->_wikiQuery = htmlspecialchars($this->_wikiQuery);
     }
 
-    public function getSections(){
-        $this->_wikiData = "{$this->_apiUrl}?format=html&action=parse&prop=sections&title={$this->_wikiPage}";
-        return $this->_wikiData;
-    }
 }

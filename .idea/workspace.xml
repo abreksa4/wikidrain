@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b3f8b531-6b0d-4021-a655-2eb1950214cf" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/wikidrain.class.php" afterPath="$PROJECT_DIR$/src/wikidrain.class.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="wikidrain.iws" />
@@ -37,8 +38,10 @@
       <file leaf-file-name="wikidrain.class.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/wikidrain.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="20" selection-start="71" selection-end="71" vertical-scroll-proportion="0.1299639" vertical-offset="0" max-vertical-offset="900">
-              <folding />
+            <state line="39" column="0" selection-start="750" selection-end="750" vertical-scroll-proportion="0.77256316" vertical-offset="274" max-vertical-offset="828">
+              <folding>
+                <element signature="e#6#110#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -213,7 +216,11 @@
       <created>1387444254224</created>
       <updated>1387444254224</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="added wikidrain class&#10;">
+      <created>1387444261935</created>
+      <updated>1387444261935</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -293,8 +300,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/wikidrain.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="20" selection-start="71" selection-end="71" vertical-scroll-proportion="0.1299639" vertical-offset="0" max-vertical-offset="900">
-          <folding />
+        <state line="39" column="0" selection-start="750" selection-end="750" vertical-scroll-proportion="0.77256316" vertical-offset="274" max-vertical-offset="828">
+          <folding>
+            <element signature="e#6#110#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
