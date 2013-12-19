@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b3f8b531-6b0d-4021-a655-2eb1950214cf" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/wikidrain.class.php" afterPath="$PROJECT_DIR$/src/wikidrain.class.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="wikidrain.iws" />
@@ -210,7 +209,11 @@
       <created>1387444096612</created>
       <updated>1387444096612</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="added wikidrain class&#10;">
+      <created>1387444254224</created>
+      <updated>1387444254224</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -245,9 +248,9 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="added wikidrain class&#10;" />
     <MESSAGE value="added wikidrain class" />
-    <option name="LAST_COMMIT_MESSAGE" value="added wikidrain class" />
+    <MESSAGE value="added wikidrain class&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="added wikidrain class&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
