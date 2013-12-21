@@ -11,14 +11,22 @@ class wikidrain {
 
     protected $_apiUrl;
     protected $_wikiQuery;
+    //Define the structure of the wikipedia page
     protected $_wikiBones = array(
-        'title' => '',
-        'suggestions' => array(),
-        'sections' => array(),
-        ''
+        'title' => '', //This is the actual title
+        'sections' => array( //The titles of the sections
+            'title' => array(),
+        ),
     );
+    //Define the data of the wikipedia page
     protected $_wikiData = array(
-
+        'title' => '', //This is the summary
+        'sections' => array( //The data in each section
+            'text' => array(),
+        ),
+        'related' => array( //The related pages
+            'title' => array(),
+        ),
     );
 
     public function __construct($lang){
