@@ -11,8 +11,15 @@ class wikidrain {
 
     protected $_apiUrl;
     protected $_wikiQuery;
-    protected $_wikiPage;
-    protected $_wikiData;
+    protected $_wikiBones = array(
+        'title' => '',
+        'suggestions' => array(),
+        'sections' => array(),
+        ''
+    );
+    protected $_wikiData = array(
+
+    );
 
     public function __construct($lang){
         $this->setLang($lang);
