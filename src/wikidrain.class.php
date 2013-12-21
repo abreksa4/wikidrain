@@ -9,8 +9,13 @@
 
 class wikidrain {
 
+    protected $_string;
     protected $_apiUrl;
     protected $_wikiQuery;
+    protected $_searchParams = array(
+        'action' => '',
+        'params' => array(),
+    );
     //Define the structure of the wikipedia page
     protected $_wikiBones = array(
         'title' => '', //This is the actual title
@@ -34,7 +39,7 @@ class wikidrain {
     }
 
     public function setLang($lang){
-        $this->_apiUrl = "http://{$lang}.wikipedia.org/w/api.php";
+        $this->_apiUrl = "http://{$lang}.wikipedia.org/w/api.php?";
     }
 
     public function getApi(){
@@ -53,4 +58,19 @@ class wikidrain {
         $this->_wikiQuery = htmlspecialchars($this->_wikiQuery);
     }
 
+    private function callApi($_searchParams){
+        $tmp = count($_searchParams['params']);
+        /*
+        for($i = 0; $i <= $tmp; $i++){
+            $_string = '&';
+            $_string = "{$_string}&{";
+        }
+        */
+        $url = "{$this->_apiUrl}action={$_searchParams['action']}";
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL, $url);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
+        curl_setopt($ch, CURLOPT_USERAGENT, 'wikidrain/1.0 (http://www.wikidrain.com/)');
+        $result = curl_exec($ch);
+    }
 }
