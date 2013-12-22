@@ -48,7 +48,7 @@ class wikidrain {
     }
 
     public function setLang($lang){
-        $this->_apiUrl = "http://{$lang}.wikipedia.org/w/api.php?format=jsonfm";
+        $this->_apiUrl = "http://{$lang}.wikipedia.org/w/api.php?format=json&";
     }
 
     public function getApi(){
@@ -67,11 +67,15 @@ class wikidrain {
         $this->_wikiQuery = htmlspecialchars($this->_wikiQuery);
     }
 
-    private function searchWiki(){
+    public function searchWiki(){
         $this->_searchParams['action'] = 'opensearch';
         $this->_searchParams['params'] = array(
-
+            "limit={$this->_limResults}",
+            "search={$this->_wikiQuery}",
+            "suggest=false",
         );
+        $result = $this->callApi();
+        return $result;
     }
 
     private function callApi(){
