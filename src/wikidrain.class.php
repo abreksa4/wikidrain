@@ -7,7 +7,8 @@
  * Time: 1:07 AM
  */
 
-class wikidrain {
+class wikidrain
+{
 
     protected $_limResults = 10;
     protected $_string;
@@ -35,43 +36,53 @@ class wikidrain {
         ),
     );
 
-    public function __construct($lang){
+    public function __construct($lang)
+    {
         $this->setLang($lang);
     }
 
-    public function setLim($lim){
+    public function setLim($lim)
+    {
         $this->_limResults = $lim;
     }
 
-    public function getLim(){
+    public function getLim()
+    {
         return $this->_limResults;
     }
 
-    public function setLang($lang){
+    public function setLang($lang)
+    {
         $this->_apiUrl = "http://{$lang}.wikipedia.org/w/api.php?format=json&";
     }
 
-    public function getApi(){
+    public function getApi()
+    {
         return $this->_apiUrl;
     }
 
-    public function setQuery($query){
+    public function setQuery($query)
+    {
         $this->_wikiQuery = $query;
     }
 
-    public function getQuery(){
+    public function getQuery()
+    {
         return $this->_wikiQuery;
     }
 
-    public function queryClean(){
+    public function queryClean()
+    {
         $this->_wikiQuery = htmlspecialchars($this->_wikiQuery);
     }
 
-    public function setTitle($title){
+    public function setTitle($title)
+    {
         $this->_wikiBones['title'] = "{$title}";
     }
 
-    public function getTitle(){
+    public function getTitle()
+    {
         return $this->_wikiBones['title'];
     }
 
@@ -91,7 +102,8 @@ class wikidrain {
     }
     */
 
-    public function sectionsWiki(){
+    public function sectionsWiki()
+    {
         $this->_searchParams['action'] = 'parse';
         $this->_searchParams['params'] = array(
             "prop=sections",
@@ -102,7 +114,8 @@ class wikidrain {
         return $result;
     }
 
-    public function searchWiki(){
+    public function searchWiki()
+    {
         $this->_searchParams['action'] = 'opensearch';
         $this->_searchParams['params'] = array(
             "limit={$this->_limResults}",
@@ -113,7 +126,8 @@ class wikidrain {
         return $result;
     }
 
-    private function callApi(){
+    private function callApi()
+    {
         $params = implode('&', $this->_searchParams['params']);
         $url = "{$this->_apiUrl}action={$this->_searchParams['action']}&{$params}";
         $curl = curl_init();
