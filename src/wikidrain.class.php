@@ -75,17 +75,21 @@ class wikidrain {
         return $this->_wikiBones['title'];
     }
 
+    /*
     public function summaryWiki(){
-        $this->_searchParams['action'] = 'parse';
+        $this->_searchParams['action'] = 'query';
         $this->_searchParams['params'] = array(
-            "page={$this->_wikiBones['title']}",
+            "prop=revisions",
+            "titles={$this->_wikiBones['title']}",
             "redirects=true",
-            "prop=text",
-            "section=0",
+            "rvprop=content",
+            "rvsection=0",
+            "rvparse",
         );
         $result = $this->callApi();
         return $result;
     }
+    */
 
     public function sectionsWiki(){
         $this->_searchParams['action'] = 'parse';
