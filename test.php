@@ -7,6 +7,8 @@ $result->queryClean();
 $results = $result->searchWiki();
 print $results;
 $result->setTitle('API');
+$summary = $result->summaryWiki();
+print $summary;
 $sections = $result->sectionsWiki();
 print $sections;
 

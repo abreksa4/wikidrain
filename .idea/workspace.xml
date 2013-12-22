@@ -30,7 +30,7 @@
       <file leaf-file-name="wikidrain.class.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/wikidrain.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="79" column="47" selection-start="1885" selection-end="1885" vertical-scroll-proportion="0.5433213" vertical-offset="1121" max-vertical-offset="2070">
+            <state line="81" column="29" selection-start="1963" selection-end="1963" vertical-scroll-proportion="0.29295775" vertical-offset="1354" max-vertical-offset="2286">
               <folding>
                 <element signature="e#6#110#0" expanded="true" />
               </folding>
@@ -41,7 +41,7 @@
       <file leaf-file-name="test.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="25" selection-start="227" selection-end="227" vertical-scroll-proportion="-6.0" vertical-offset="0" max-vertical-offset="324">
+            <state line="10" column="15" selection-start="278" selection-end="278" vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="360">
               <folding />
             </state>
           </provider>
@@ -259,7 +259,11 @@
       <created>1387679381994</created>
       <updated>1387679381994</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="working on searchWiki, sectionsWiki, and callApi&#10;">
+      <created>1387680518916</created>
+      <updated>1387680518916</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -277,7 +281,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294702" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3294702" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294702" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -302,7 +306,8 @@
     <MESSAGE value="working on callApi&#10;" />
     <MESSAGE value="working on searchWiki&#10;" />
     <MESSAGE value="working on searchWiki and callApi&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="working on searchWiki and callApi&#10;" />
+    <MESSAGE value="working on searchWiki, sectionsWiki, and callApi&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="working on searchWiki, sectionsWiki, and callApi&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -388,14 +393,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="25" selection-start="227" selection-end="227" vertical-scroll-proportion="-6.0" vertical-offset="0" max-vertical-offset="324">
+        <state line="10" column="15" selection-start="278" selection-end="278" vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="360">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/wikidrain.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="47" selection-start="1885" selection-end="1885" vertical-scroll-proportion="0.5433213" vertical-offset="1121" max-vertical-offset="2070">
+        <state line="81" column="29" selection-start="1963" selection-end="1963" vertical-scroll-proportion="0.29295775" vertical-offset="1354" max-vertical-offset="2286">
           <folding>
             <element signature="e#6#110#0" expanded="true" />
           </folding>

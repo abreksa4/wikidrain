@@ -75,6 +75,18 @@ class wikidrain {
         return $this->_wikiBones['title'];
     }
 
+    public function summaryWiki(){
+        $this->_searchParams['action'] = 'parse';
+        $this->_searchParams['params'] = array(
+            "page={$this->_wikiBones['title']}",
+            "redirects=true",
+            "prop=text",
+            "section=0",
+        );
+        $result = $this->callApi();
+        return $result;
+    }
+
     public function sectionsWiki(){
         $this->_searchParams['action'] = 'parse';
         $this->_searchParams['params'] = array(
@@ -100,11 +112,11 @@ class wikidrain {
     private function callApi(){
         $params = implode('&', $this->_searchParams['params']);
         $url = "{$this->_apiUrl}action={$this->_searchParams['action']}&{$params}";
-        $ch = curl_init();
-        curl_setopt($ch, CURLOPT_URL, $url);
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
-        curl_setopt($ch, CURLOPT_USERAGENT, 'wikidrain/1.0 (http://www.example.com/)');
-        $result = curl_exec($ch);
+        $curl = curl_init();
+        curl_setopt($curl, CURLOPT_URL, $url);
+        curl_setopt($curl, CURLOPT_RETURNTRANSFER, TRUE);
+        curl_setopt($curl, CURLOPT_USERAGENT, 'wikidrain/1.0 (http://www.example.com/)');
+        $result = curl_exec($curl);
         return $result;
     }
 }
