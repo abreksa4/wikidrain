@@ -9,6 +9,7 @@
 
 class wikidrain {
 
+    protected $_limResults = 10;
     protected $_string;
     protected $_apiUrl;
     protected $_wikiQuery;
@@ -38,6 +39,14 @@ class wikidrain {
         $this->setLang($lang);
     }
 
+    public function setLim($lim){
+        $this->_limResults = $lim;
+    }
+
+    public function getLim(){
+        return $this->_limResults;
+    }
+
     public function setLang($lang){
         $this->_apiUrl = "http://{$lang}.wikipedia.org/w/api.php?format=jsonfm";
     }
@@ -58,9 +67,16 @@ class wikidrain {
         $this->_wikiQuery = htmlspecialchars($this->_wikiQuery);
     }
 
-    private function callApi($_searchParams){
-        $params = implode('&', $_searchParams['params']);
-        $url = "{$this->_apiUrl}action={$_searchParams['action']}&{$params}";
+    private function searchWiki(){
+        $this->_searchParams['action'] = 'opensearch';
+        $this->_searchParams['params'] = array(
+
+        );
+    }
+
+    private function callApi(){
+        $params = implode('&', $this->_searchParams['params']);
+        $url = "{$this->_apiUrl}action={$this->_searchParams['action']}&{$params}";
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, $url);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
