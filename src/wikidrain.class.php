@@ -39,7 +39,7 @@ class wikidrain {
     }
 
     public function setLang($lang){
-        $this->_apiUrl = "http://{$lang}.wikipedia.org/w/api.php?";
+        $this->_apiUrl = "http://{$lang}.wikipedia.org/w/api.php?format=jsonfm";
     }
 
     public function getApi(){
@@ -59,18 +59,13 @@ class wikidrain {
     }
 
     private function callApi($_searchParams){
-        $tmp = count($_searchParams['params']);
-        /*
-        for($i = 0; $i <= $tmp; $i++){
-            $_string = '&';
-            $_string = "{$_string}&{";
-        }
-        */
-        $url = "{$this->_apiUrl}action={$_searchParams['action']}";
+        $params = implode('&', $_searchParams['params']);
+        $url = "{$this->_apiUrl}action={$_searchParams['action']}&{$params}";
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, $url);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
-        curl_setopt($ch, CURLOPT_USERAGENT, 'wikidrain/1.0 (http://www.wikidrain.com/)');
+        curl_setopt($ch, CURLOPT_USERAGENT, 'wikidrain/1.0 (http://www.example.com/)');
         $result = curl_exec($ch);
+        return $result;
     }
 }
