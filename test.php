@@ -13,4 +13,3 @@ print $summary;
 */
 $sections = $result->sectionsWiki();
 print $sections;
-

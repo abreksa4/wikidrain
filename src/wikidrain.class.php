@@ -9,8 +9,7 @@
 
 class wikidrain
 {
-
-    protected $_limResults = 10;
+    public $_limResults = 10;
     protected $_string;
     protected $_apiUrl;
     protected $_wikiQuery;
@@ -35,20 +34,11 @@ class wikidrain
             'title' => array(),
         ),
     );
+    protected $_var = array();
 
     public function __construct($lang)
     {
         $this->setLang($lang);
-    }
-
-    public function setLim($lim)
-    {
-        $this->_limResults = $lim;
-    }
-
-    public function getLim()
-    {
-        return $this->_limResults;
     }
 
     public function setLang($lang)
@@ -64,6 +54,7 @@ class wikidrain
     public function setQuery($query)
     {
         $this->_wikiQuery = $query;
+        $this->queryClean();
     }
 
     public function getQuery()
