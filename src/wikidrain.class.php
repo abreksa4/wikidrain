@@ -10,7 +10,7 @@
 class wikidrain
 {
     public $_limResults = 10;
-    protected $_format = "json";
+    protected $_format = "xml";
     protected $_string;
     protected $_apiUrl;
     protected $_wikiQuery;
@@ -21,21 +21,7 @@ class wikidrain
     //Define the structure of the wikipedia page
     protected $_wikiBones = array(
         'title' => '', //This is the actual title
-        'sections' => array( //The titles of the sections
-            'title' => array(),
-        ),
     );
-    //Define the data of the wikipedia page
-    protected $_wikiData = array(
-        'title' => '', //This is the summary
-        'sections' => array( //The data in each section
-            'text' => array(),
-        ),
-        'related' => array( //The related pages
-            'title' => array(),
-        ),
-    );
-    protected $_var = array();
 
     public function __construct($lang)
     {

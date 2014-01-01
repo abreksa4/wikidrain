@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b3f8b531-6b0d-4021-a655-2eb1950214cf" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.php" afterPath="$PROJECT_DIR$/test.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/wikidrain.class.php" afterPath="$PROJECT_DIR$/src/wikidrain.class.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -27,19 +26,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="test.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="test.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="15" selection-start="333" selection-end="333" vertical-scroll-proportion="0.38989168" vertical-offset="0" max-vertical-offset="554">
+            <state line="7" column="0" selection-start="188" selection-end="188" vertical-scroll-proportion="-5.25" vertical-offset="0" max-vertical-offset="324">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="wikidrain.class.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="wikidrain.class.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/wikidrain.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="87" column="35" selection-start="2062" selection-end="2062" vertical-scroll-proportion="-6.0" vertical-offset="1422" max-vertical-offset="2412">
+            <state line="23" column="6" selection-start="505" selection-end="505" vertical-scroll-proportion="0.7472924" vertical-offset="0" max-vertical-offset="2178">
               <folding>
                 <element signature="e#6#110#0" expanded="true" />
               </folding>
@@ -67,8 +66,8 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/src/wikidrain.php" />
-        <option value="$PROJECT_DIR$/src/wikidrain.class.php" />
         <option value="$PROJECT_DIR$/test.php" />
+        <option value="$PROJECT_DIR$/src/wikidrain.class.php" />
       </list>
     </option>
   </component>
@@ -284,7 +283,11 @@
       <created>1388611928240</created>
       <updated>1388611928240</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="summaryWiki now sectionWiki&#10;">
+      <created>1388613739344</created>
+      <updated>1388613739344</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -331,7 +334,8 @@
     <MESSAGE value="working on summaryWiki&#10;" />
     <MESSAGE value="working on summaryWiki... still &#10;" />
     <MESSAGE value="used public for $_limResult&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="used public for $_limResult&#10;" />
+    <MESSAGE value="summaryWiki now sectionWiki&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="summaryWiki now sectionWiki&#10;" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -417,19 +421,19 @@
         <state line="2" column="0" selection-start="20" selection-end="20" vertical-scroll-proportion="0.062068965" vertical-offset="0" max-vertical-offset="580" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/wikidrain.class.php">
+    <entry file="file://$PROJECT_DIR$/test.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="87" column="35" selection-start="2062" selection-end="2062" vertical-scroll-proportion="-6.0" vertical-offset="1422" max-vertical-offset="2412">
-          <folding>
-            <element signature="e#6#110#0" expanded="true" />
-          </folding>
+        <state line="7" column="0" selection-start="188" selection-end="188" vertical-scroll-proportion="-5.25" vertical-offset="0" max-vertical-offset="324">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.php">
+    <entry file="file://$PROJECT_DIR$/src/wikidrain.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="15" selection-start="333" selection-end="333" vertical-scroll-proportion="0.38989168" vertical-offset="0" max-vertical-offset="554">
-          <folding />
+        <state line="23" column="6" selection-start="505" selection-end="505" vertical-scroll-proportion="0.7472924" vertical-offset="0" max-vertical-offset="2178">
+          <folding>
+            <element signature="e#6#110#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
