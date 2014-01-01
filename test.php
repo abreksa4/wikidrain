@@ -2,14 +2,12 @@
 include_once('src\wikidrain.class.php');
 $result = new wikidrain('en');
 $result->setQuery('api');
-//$result->setLim('20');
-$result->queryClean();
+$result->_limResults = 10;
+$result->cleanQuery();
 $results = $result->searchWiki();
 print $results;
 $result->setTitle('API');
-/*
-$summary = $result->summaryWiki();
-print $summary;
-*/
 $sections = $result->sectionsWiki();
 print $sections;
+$summary = $result->sectionWiki(2);
+print $summary;

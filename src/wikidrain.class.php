@@ -10,6 +10,7 @@
 class wikidrain
 {
     public $_limResults = 10;
+    protected $_format = "json";
     protected $_string;
     protected $_apiUrl;
     protected $_wikiQuery;
@@ -43,7 +44,7 @@ class wikidrain
 
     public function setLang($lang)
     {
-        $this->_apiUrl = "http://{$lang}.wikipedia.org/w/api.php?format=json&";
+        $this->_apiUrl = "http://{$lang}.wikipedia.org/w/api.php?format={$this->_format}&";
     }
 
     public function getApi()
@@ -54,7 +55,7 @@ class wikidrain
     public function setQuery($query)
     {
         $this->_wikiQuery = $query;
-        $this->queryClean();
+        $this->cleanQuery();
     }
 
     public function getQuery()
@@ -62,7 +63,7 @@ class wikidrain
         return $this->_wikiQuery;
     }
 
-    public function queryClean()
+    public function cleanQuery()
     {
         $this->_wikiQuery = htmlspecialchars($this->_wikiQuery);
     }
@@ -77,21 +78,19 @@ class wikidrain
         return $this->_wikiBones['title'];
     }
 
-    /*
-    public function summaryWiki(){
+    public function sectionWiki($section)
+    {
         $this->_searchParams['action'] = 'query';
         $this->_searchParams['params'] = array(
             "prop=revisions",
             "titles={$this->_wikiBones['title']}",
             "redirects=true",
             "rvprop=content",
-            "rvsection=0",
-            "rvparse",
+            "rvsection={$section}",
         );
         $result = $this->callApi();
         return $result;
     }
-    */
 
     public function sectionsWiki()
     {
