@@ -21,6 +21,9 @@ class wikidrain
     //Define the structure of the wikipedia page
     protected $_wikiBones = array(
         'title' => '', //This is the actual title
+        'sections' => array( //This is the index of each section, not the title: may be multidimensional
+
+        ),
     );
 
     public function __construct($lang)
