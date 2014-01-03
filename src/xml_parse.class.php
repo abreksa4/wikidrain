@@ -12,6 +12,7 @@ class xml_parse
     protected $_XML;
     protected $_data = array();
     protected $_count = 0;
+    protected $_string;
 
     function __destruct()
     {
@@ -48,5 +49,18 @@ class xml_parse
         return $this->_data;
     }
 
-
+    public function parseText($xml)
+    {
+        //Totally cheating here, just replacing characters...
+        $this->_XML = new SimpleXMLElement($xml);
+        $this->_data = $this->_XML->query->pages->page->revisions->rev;
+        $string = $this->_data[0];
+        $string = preg_replace('/<ref[^>]*>([\s\S]*?)<\/ref[^>]*>/', '', $string);
+        $string = str_replace('|', '/', $string);
+        $string = str_replace('[[', '', $string);
+        $string = str_replace(']]', '', $string);
+        $string = preg_replace('/{{(.*?)\}}/s', '', $string);
+        $string = strip_tags($string);
+        return $string;
+    }
 } 

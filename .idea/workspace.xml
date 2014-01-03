@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b3f8b531-6b0d-4021-a655-2eb1950214cf" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/composer.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.php" afterPath="$PROJECT_DIR$/test.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/wikidrain.iml" afterPath="$PROJECT_DIR$/.idea/wikidrain.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/xml_parse.class.php" afterPath="$PROJECT_DIR$/src/xml_parse.class.php" />
     </list>
@@ -15,6 +17,10 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="ComposerSettings">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <pharPath>C:\xampp\htdocs\wikidrain\composer.phar</pharPath>
+  </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
@@ -30,7 +36,7 @@
       <file leaf-file-name="test.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="0" selection-start="491" selection-end="491" vertical-scroll-proportion="0.58483756" vertical-offset="0" max-vertical-offset="554">
+            <state line="17" column="1" selection-start="578" selection-end="578" vertical-scroll-proportion="0.5523466" vertical-offset="0" max-vertical-offset="554">
               <folding />
             </state>
           </provider>
@@ -39,7 +45,7 @@
       <file leaf-file-name="wikidrain.class.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/wikidrain.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="79" column="5" selection-start="2190" selection-end="2190" vertical-scroll-proportion="-59.25" vertical-offset="0" max-vertical-offset="1584">
+            <state line="79" column="5" selection-start="2190" selection-end="2190" vertical-scroll-proportion="-20.833334" vertical-offset="922" max-vertical-offset="1584">
               <folding>
                 <element signature="e#6#115#0" expanded="true" />
               </folding>
@@ -50,22 +56,10 @@
       <file leaf-file-name="xml_parse.class.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/xml_parse.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="0" selection-start="1178" selection-end="1178" vertical-scroll-proportion="-18.583334" vertical-offset="454" max-vertical-offset="1026">
+            <state line="63" column="5" selection-start="1821" selection-end="1821" vertical-scroll-proportion="-18.583334" vertical-offset="688" max-vertical-offset="1260">
               <folding>
                 <element signature="e#6#116#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="62" column="87" selection-start="2200" selection-end="2200" vertical-scroll-proportion="-12.76" vertical-offset="797" max-vertical-offset="1350">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -94,12 +88,22 @@
         <option value="$PROJECT_DIR$/src/old_old_wikidrain.class.php" />
         <option value="$PROJECT_DIR$/src/wikidrain.class.php" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/src/wikia.php" />
+        <option value="$PROJECT_DIR$/src/wikiparse.php" />
+        <option value="$PROJECT_DIR$/wikia.incl.php" />
         <option value="$PROJECT_DIR$/test.php" />
         <option value="$PROJECT_DIR$/src/xml_parse.class.php" />
       </list>
     </option>
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="xampp" />
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="xampp">
+    <include_path>
+      <path value="C:\xampp\php\PEAR" />
+      <path value="." />
+      <path value="c:\xampp\php\3rd\" />
+    </include_path>
+  </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-4" />
     <option name="y" value="-4" />
@@ -172,7 +176,7 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="settings.github" />
+    <property name="options.lastSelected" value="Configurable.PHP" />
     <property name="recentsLimit" value="5" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FullScreen" value="false" />
@@ -351,7 +355,11 @@
       <created>1388733140541</created>
       <updated>1388733140541</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="added parseSections&#10;">
+      <created>1388737244390</created>
+      <updated>1388737244390</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -426,7 +434,8 @@
     <MESSAGE value="fixed __destruct function error&#10;" />
     <MESSAGE value="Updated README.md&#10;" />
     <MESSAGE value="Started xml_parse&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Started xml_parse&#10;" />
+    <MESSAGE value="added parseSections&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="added parseSections&#10;" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -453,32 +462,39 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="87" selection-start="2200" selection-end="2200" vertical-scroll-proportion="-12.76" vertical-offset="797" max-vertical-offset="1350">
+        <state line="62" column="87" selection-start="2200" selection-end="2200" vertical-scroll-proportion="0.5768535" vertical-offset="797" max-vertical-offset="1350">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/wikidrain.class.php">
+    <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="5" selection-start="2190" selection-end="2190" vertical-scroll-proportion="-59.25" vertical-offset="0" max-vertical-offset="1584">
-          <folding>
-            <element signature="e#6#115#0" expanded="true" />
-          </folding>
+        <state line="10" column="1" selection-start="306" selection-end="306" vertical-scroll-proportion="0.32490975" vertical-offset="0" max-vertical-offset="554">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/xml_parse.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="0" selection-start="1178" selection-end="1178" vertical-scroll-proportion="-18.583334" vertical-offset="454" max-vertical-offset="1026">
+        <state line="63" column="5" selection-start="1821" selection-end="1821" vertical-scroll-proportion="-18.583334" vertical-offset="688" max-vertical-offset="1260">
           <folding>
             <element signature="e#6#116#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/wikidrain.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="79" column="5" selection-start="2190" selection-end="2190" vertical-scroll-proportion="-20.833334" vertical-offset="922" max-vertical-offset="1584">
+          <folding>
+            <element signature="e#6#115#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="491" selection-end="491" vertical-scroll-proportion="0.58483756" vertical-offset="0" max-vertical-offset="554">
+        <state line="17" column="1" selection-start="578" selection-end="578" vertical-scroll-proportion="0.5523466" vertical-offset="0" max-vertical-offset="554">
           <folding />
         </state>
       </provider>

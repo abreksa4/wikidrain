@@ -4,6 +4,30 @@
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library name="PHARS">
+        <CLASSES>
+          <root url="phar://$MODULE_DIR$/composer.phar" />
+          <root url="phar://$MODULE_DIR$/../../php/3rd/Zend/Service/WindowsAzure/CommandLine/Scaffolders/DefaultScaffolder.phar" />
+        </CLASSES>
+        <SOURCES>
+          <root url="phar://$MODULE_DIR$/composer.phar" />
+          <root url="phar://$MODULE_DIR$/../../php/3rd/Zend/Service/WindowsAzure/CommandLine/Scaffolders/DefaultScaffolder.phar" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="PHP">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../php/3rd" />
+          <root url="file://$MODULE_DIR$/../../php/pear" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../../php/3rd" />
+          <root url="file://$MODULE_DIR$/../../php/pear" />
+        </SOURCES>
+      </library>
+    </orderEntry>
   </component>
 </module>
 

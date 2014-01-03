@@ -1,0 +1,11 @@
+{
+    "name": "abreksa4/wikidrain",
+    "description": "A simple PHP wrapper for the WikiMedia API centralized around querying Wikipedia articles",
+    "minimum-stability": "stable",
+    "authors": [
+        {
+            "name": "Andrew Breksa",
+            "email": "abreksa4@gmail.com"
+        }
+    ]
+}
