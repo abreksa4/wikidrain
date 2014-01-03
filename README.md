@@ -19,7 +19,7 @@ wikidrain is very simple to use, just make a new instance of wikidrain:
     $wiki = new wikidrain();
     ?>
 
-To search wikipedia for articles, use the Search($query) method:
+To search wikipedia for articles, use the Search method:
 This returns a multidimensional array...
 
     <?php
@@ -27,7 +27,7 @@ This returns a multidimensional array...
     $result = $wiki->Search('API');
     ?>
 
-To get the sections of a wikipedia page, use the getSections($title) method:
+To get the sections of a wikipedia page, use the getSections method:
 This also returns a multidimensional array...
 
     <?php
@@ -39,7 +39,7 @@ NOTE: Wikidrain does not include any error checking/verification that the articl
       exists, so be sure to only request the sections/text of articles that were
       returned by the Search($query) method...
 
-To get the text of a section from a wikipedia page, use the getText($title, $section)
+To get the text of a section from a wikipedia page, use the getText
 method.
 This returns text...
 
@@ -52,17 +52,22 @@ NOTE: Again, wikidrain does not include any error checking/verification to deter
       if an article or section exists, so make sure to only request data from pages/
       sections returned by the Search($query) and getSections($title) methods...
 
+To get the list of articles listed in the 'See also' section, use the getRelated
+method
+This returns an array...
+
+    <?php
+    $wiki = new wikidrain();
+    $wiki->getRelated('API');
+    ?>
+
 TODO:
 ===================================================================================
 
 Currently, the objectives are as follows:
 
-1. Inclusion of a method to pull the "See Also" as an array, not just as a a section
-   accessible by the getSection method
+1. Anything to put less strain on the wikipedia servers
 
-2. An integrated class (or method) to parse the WikiText and pull an array of the
-   linked articles
+2. A method to return the wikipedia donation banner
 
-3. Anything to put less strain on the wikipedia servers
-
-4. A method to return the wikipedia donation banner
+3. Error checking

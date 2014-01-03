@@ -14,6 +14,7 @@ class wikidrain
     protected $_query;
     protected $_title;
     protected $_section;
+    protected $_tmp = array();
     //XML vars
     protected $_XML;
     protected $_data = array();
@@ -24,14 +25,7 @@ class wikidrain
 
     function __destruct()
     {
-        $this->_apiParams = NULL;
-        $this->_query = NULL;
-        $this->_title = NULL;
-        $this->_section = NULL;
-        //XML vars
-        $this->_XML = NULL;
-        $this->_data = NULL;
-        $this->_string = NULL;
+        $this->release();
     }
 
 
@@ -46,6 +40,7 @@ class wikidrain
         );
         $result = $this->callApi();
         $result = $this->parseSearch($result);
+        $this->release();
         return $result;
     }
 
@@ -60,6 +55,7 @@ class wikidrain
         );
         $result = $this->callApi();
         $result = $this->parseSections($result);
+        $this->release();
         return $result;
     }
 
@@ -77,12 +73,37 @@ class wikidrain
         );
         $result = $this->callApi();
         $result = $this->parseText($result);
+        $this->release();
         return $result;
     }
 
     public function getRelated($title)
     {
+        $this->_data = $this->getSections($title);
+        $this->_string = count($this->_data) + 1;
+        $result = $this->getText($title, $this->_string);
+        $result = preg_replace('/==(.*?)\==/s', '', $result);
+        $result = str_replace("\r\n", "\n", $result);
+        $result = str_replace("*", '', $result);
+        $result = explode("\n", $result);
+        $result = array_filter(array_map('trim', $result));
+        $this->release();
+        return $result;
 
+    }
+
+    private function release()
+    {
+        $this->_apiParams = NULL;
+        $this->_query = NULL;
+        $this->_title = NULL;
+        $this->_section = NULL;
+        //XML vars
+        $this->_XML = NULL;
+        $this->_data = NULL;
+        //Shared
+        $this->_tmp = NULL;
+        $this->_string = NULL;
     }
 
     private function callApi()
@@ -145,5 +166,3 @@ class wikidrain
         return $string;
     }
 }
-
-?>
