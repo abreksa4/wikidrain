@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b3f8b531-6b0d-4021-a655-2eb1950214cf" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.php" afterPath="$PROJECT_DIR$/test.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/wikidrain.class.php" afterPath="$PROJECT_DIR$/src/wikidrain.class.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -30,7 +29,7 @@
       <file leaf-file-name="test.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="17" selection-start="339" selection-end="339" vertical-scroll-proportion="-9.0" vertical-offset="0" max-vertical-offset="324">
+            <state line="12" column="17" selection-start="339" selection-end="339" vertical-scroll-proportion="0.0" vertical-offset="216" max-vertical-offset="324">
               <folding />
             </state>
           </provider>
@@ -39,8 +38,10 @@
       <file leaf-file-name="wikidrain.class.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/wikidrain.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="16" selection-start="50" selection-end="50" vertical-scroll-proportion="-2.1402879" vertical-offset="1244" max-vertical-offset="2232">
-              <folding />
+            <state line="117" column="5" selection-start="2943" selection-end="2943" vertical-scroll-proportion="3.7877698" vertical-offset="0" max-vertical-offset="2268">
+              <folding>
+                <element signature="e#6#110#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -65,8 +66,8 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/src/wikidrain.php" />
-        <option value="$PROJECT_DIR$/src/wikidrain.class.php" />
         <option value="$PROJECT_DIR$/test.php" />
+        <option value="$PROJECT_DIR$/src/wikidrain.class.php" />
       </list>
     </option>
   </component>
@@ -91,7 +92,7 @@
     <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+    <navigator proportions="" version="1" splitterProportion="0.5">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -102,53 +103,17 @@
       <autoscrollFromSource />
       <sortByType />
     </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wikidrain" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wikidrain" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wikidrain" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wikidrain" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wikidrain" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="settings.github" />
+    <property name="recentsLimit" value="5" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FullScreen" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RunManager" selected="PHP Script.test.php">
     <configuration default="false" name="test.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/test.php">
@@ -290,7 +255,11 @@
       <created>1388614594805</created>
       <updated>1388614594805</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="cleanup&#10;">
+      <created>1388651876029</created>
+      <updated>1388651876029</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -301,7 +270,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17954545" sideWeight="0.6705298" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18257576" sideWeight="0.6705298" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19621213" sideWeight="0.7557756" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -346,6 +315,15 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/wikidrain.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="90" column="10" selection-start="2068" selection-end="2068" vertical-scroll-proportion="0.0" vertical-offset="1136" max-vertical-offset="2232">
+          <folding>
+            <element signature="e#6#110#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="0" selection-start="343" selection-end="635" vertical-scroll-proportion="0.0" vertical-offset="112" max-vertical-offset="666">
@@ -356,14 +334,18 @@
     <entry file="file://$PROJECT_DIR$/src/wikidrain.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="16" selection-start="50" selection-end="50" vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="2232">
-          <folding />
+          <folding>
+            <element signature="e#6#110#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/wikidrain.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="43" column="32" selection-start="1014" selection-end="1014" vertical-scroll-proportion="0.0" vertical-offset="774" max-vertical-offset="2610">
-          <folding />
+          <folding>
+            <element signature="e#6#110#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -377,7 +359,9 @@
     <entry file="file://$PROJECT_DIR$/src/wikidrain.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="58" column="5" selection-start="1381" selection-end="1381" vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="1458">
-          <folding />
+          <folding>
+            <element signature="e#6#110#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -391,14 +375,18 @@
     <entry file="file://$PROJECT_DIR$/src/wikidrain.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="3" selection-start="110" selection-end="110" vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="828">
-          <folding />
+          <folding>
+            <element signature="e#6#110#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/wikidrain.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="3" selection-start="110" selection-end="110" vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="828">
-          <folding />
+          <folding>
+            <element signature="e#6#110#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -410,7 +398,9 @@
     <entry file="file://$PROJECT_DIR$/src/wikidrain.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="39" column="0" selection-start="750" selection-end="750" vertical-scroll-proportion="0.0" vertical-offset="702" max-vertical-offset="828">
-          <folding />
+          <folding>
+            <element signature="e#6#110#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -431,15 +421,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="17" selection-start="339" selection-end="339" vertical-scroll-proportion="-9.0" vertical-offset="0" max-vertical-offset="324">
+        <state line="12" column="17" selection-start="339" selection-end="339" vertical-scroll-proportion="0.0" vertical-offset="216" max-vertical-offset="324">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/wikidrain.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="16" selection-start="50" selection-end="50" vertical-scroll-proportion="-2.1402879" vertical-offset="1244" max-vertical-offset="2232">
-          <folding />
+        <state line="117" column="5" selection-start="2943" selection-end="2943" vertical-scroll-proportion="3.7877698" vertical-offset="0" max-vertical-offset="2268">
+          <folding>
+            <element signature="e#6#110#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
