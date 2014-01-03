@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b3f8b531-6b0d-4021-a655-2eb1950214cf" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.php" afterPath="$PROJECT_DIR$/test.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/wikidrain.class.php" afterPath="$PROJECT_DIR$/src/wikidrain.class.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="wikidrain.iws" />
@@ -35,7 +32,7 @@
       <file leaf-file-name="test.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="36" selection-start="782" selection-end="782" vertical-scroll-proportion="0.7400722" vertical-offset="4" max-vertical-offset="558">
+            <state line="23" column="36" selection-start="786" selection-end="786" vertical-scroll-proportion="0.7400722" vertical-offset="4" max-vertical-offset="558">
               <folding />
             </state>
           </provider>
@@ -44,7 +41,7 @@
       <file leaf-file-name="wikidrain.class.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/wikidrain.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="90" column="23" selection-start="2590" selection-end="2590" vertical-scroll-proportion="-19.333334" vertical-offset="1156" max-vertical-offset="3114">
+            <state line="90" column="23" selection-start="2593" selection-end="2593" vertical-scroll-proportion="-19.333334" vertical-offset="1156" max-vertical-offset="3132">
               <folding>
                 <element signature="e#6#115#0" expanded="true" />
               </folding>
@@ -92,8 +89,8 @@
         <option value="$PROJECT_DIR$/wikia.incl.php" />
         <option value="$PROJECT_DIR$/src/xml_parse.class.php" />
         <option value="$PROJECT_DIR$/src/wikidrain.class.php" />
-        <option value="$PROJECT_DIR$/test.php" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/test.php" />
       </list>
     </option>
   </component>
@@ -371,7 +368,11 @@
       <created>1388748088776</created>
       <updated>1388748088776</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Updated test">
+      <created>1388751658202</created>
+      <updated>1388751658202</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -450,7 +451,8 @@
     <MESSAGE value="added parseText&#10;" />
     <MESSAGE value="added check to remove the &quot;See also&quot;, &quot;References&quot;, and &quot;External links&quot; sections &#10;" />
     <MESSAGE value="Integrated the xml_parse class &amp; updated readme.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="Integrated the xml_parse class &amp; updated readme.md" />
+    <MESSAGE value="Updated test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated test" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -491,7 +493,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/wikidrain.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="90" column="23" selection-start="2590" selection-end="2590" vertical-scroll-proportion="-19.333334" vertical-offset="1156" max-vertical-offset="3114">
+        <state line="90" column="23" selection-start="2593" selection-end="2593" vertical-scroll-proportion="-19.333334" vertical-offset="1156" max-vertical-offset="3132">
           <folding>
             <element signature="e#6#115#0" expanded="true" />
           </folding>
@@ -500,7 +502,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="36" selection-start="782" selection-end="782" vertical-scroll-proportion="0.7400722" vertical-offset="4" max-vertical-offset="558">
+        <state line="23" column="36" selection-start="786" selection-end="786" vertical-scroll-proportion="0.7400722" vertical-offset="4" max-vertical-offset="558">
           <folding />
         </state>
       </provider>
