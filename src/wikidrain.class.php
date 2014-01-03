@@ -1,105 +1,66 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: abreksa
- * Project: wikdrain
- * Date: 12/19/13
- * Time: 1:07 AM
+ * User: Andrew Breksa
+ * Project: wikidrain
+ * Date: 1/2/14
+ * Time: 8:46 PM
  */
 
 class wikidrain
 {
-    public $_limResults = 10;
-    protected $_format = "xml";
-    protected $_string;
-    protected $_apiUrl;
-    protected $_wikiQuery;
-    protected $_searchParams = array(
-        'action' => '',
-        'params' => array(),
-    );
-    //Define the structure of the wikipedia page
-    protected $_wikiBones = array(
-        'title' => '', //This is the actual title
-        'sections' => array( //This is the index of each section, not the title: may be multidimensional
+    protected $_apiURL = 'http://en.wikipedia.org/w/api.php?format=xml&';
+    protected $_apiParams = array();
+    protected $_query;
+    protected $_title;
+    protected $_section;
 
-        ),
-    );
 
-    public function __construct($lang)
+    private function __destruct()
     {
-        $this->setLang($lang);
+        $this->_apiParams = NULL;
+        $this->_query = NULL;
+        $this->_title = NULL;
+        $this->_section = NULL;
     }
 
-    public function setLang($lang)
+    public function Search($query, $numResult)
     {
-        $this->_apiUrl = "http://{$lang}.wikipedia.org/w/api.php?format={$this->_format}&";
+        $this->_query = htmlspecialchars($query);
+        $this->_apiParams['action'] = 'opensearch';
+        $this->_apiParams['params'] = array(
+            "limit={$numResult}",
+            "search={$this->_query}",
+            "suggest=false",
+        );
+        $result = $this->callApi();
+        return $result;
     }
 
-    public function getApi()
+    public function Sections($title)
     {
-        return $this->_apiUrl;
+        $this->_title = htmlspecialchars($title);
+        $this->_apiParams['action'] = 'parse';
+        $this->_apiParams['params'] = array(
+            "prop=sections",
+            "page={$this->_title}",
+            "redirects=true",
+        );
+        $result = $this->callApi();
+        return $result;
     }
 
-    public function setQuery($query)
+    public function Text($title, $section)
     {
-        $this->_wikiQuery = $query;
-        $this->cleanQuery();
-    }
-
-    public function getQuery()
-    {
-        return $this->_wikiQuery;
-    }
-
-    public function cleanQuery()
-    {
-        $this->_wikiQuery = htmlspecialchars($this->_wikiQuery);
-    }
-
-    public function setTitle($title)
-    {
-        $this->_wikiBones['title'] = "{$title}";
-    }
-
-    public function getTitle()
-    {
-        return $this->_wikiBones['title'];
-    }
-
-    public function sectionWiki($section)
-    {
-        $this->_searchParams['action'] = 'query';
-        $this->_searchParams['params'] = array(
+        $this->_title = htmlspecialchars($title);
+        $this->_section = htmlspecialchars($section);
+        $this->_apiParams['action'] = 'query';
+        $this->_apiParams['params'] = array(
             "prop=revisions",
-            "titles={$this->_wikiBones['title']}",
+            "titles={$this->_title}",
             "redirects=true",
             "rvprop=content",
-            "rvsection={$section}",
-        );
-        $result = $this->callApi();
-        return $result;
-    }
-
-    public function sectionsWiki()
-    {
-        $this->_searchParams['action'] = 'parse';
-        $this->_searchParams['params'] = array(
-            "prop=sections",
-            "page={$this->_wikiBones['title']}",
-            "redirects=true",
-        );
-        $result = $this->callApi();
-        return $result;
-    }
-
-    public function searchWiki()
-    {
-        $this->_searchParams['action'] = 'opensearch';
-        $this->_searchParams['params'] = array(
-            "limit={$this->_limResults}",
-            "search={$this->_wikiQuery}",
-            "suggest=false",
+            "rvsection={$this->_section}",
         );
         $result = $this->callApi();
         return $result;
@@ -107,8 +68,8 @@ class wikidrain
 
     private function callApi()
     {
-        $params = implode('&', $this->_searchParams['params']);
-        $url = "{$this->_apiUrl}action={$this->_searchParams['action']}&{$params}";
+        $params = implode('&', $this->_apiParams['params']);
+        $url = "{$this->_apiURL}action={$this->_apiParams['action']}&{$params}";
         $curl = curl_init();
         curl_setopt($curl, CURLOPT_URL, $url);
         curl_setopt($curl, CURLOPT_RETURNTRANSFER, TRUE);
@@ -116,5 +77,5 @@ class wikidrain
         $result = curl_exec($curl);
         return $result;
     }
-}
 
+} 
