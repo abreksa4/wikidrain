@@ -70,4 +70,6 @@ Currently, the objectives are as follows:
 
 2. A method to return the wikipedia donation banner
 
-3. Error checking
+3. Improved wikitext to plain text conversion in parseText
+
+4. Error checking
