@@ -43,7 +43,7 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="4" selection-start="1037" selection-end="1037" vertical-scroll-proportion="0.9439421" vertical-offset="0" max-vertical-offset="1350">
+            <state line="41" column="0" selection-start="1417" selection-end="1417" vertical-scroll-proportion="0.16274865" vertical-offset="648" max-vertical-offset="1350">
               <folding />
             </state>
           </provider>
@@ -326,7 +326,11 @@
       <created>1388727946093</created>
       <updated>1388727946093</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Updated README.md&#10;">
+      <created>1388728313076</created>
+      <updated>1388728313076</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -421,7 +425,7 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="4" selection-start="1037" selection-end="1037" vertical-scroll-proportion="0.9439421" vertical-offset="0" max-vertical-offset="1350">
+        <state line="41" column="0" selection-start="1417" selection-end="1417" vertical-scroll-proportion="0.16274865" vertical-offset="648" max-vertical-offset="1350">
           <folding />
         </state>
       </provider>

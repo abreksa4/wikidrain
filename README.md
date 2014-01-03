@@ -52,7 +52,7 @@ NOTE: again, wikidrain does not include any error checking/verification to deter
       if an article or section exists, so make sure to only request data from pages/
       sections returned by the Search($query) and getSections($title) methods...
 
-TDOD:
+TODO:
 ===================================================================================
 
 Currently, the objectives are as follows:
