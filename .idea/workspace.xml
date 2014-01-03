@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b3f8b531-6b0d-4021-a655-2eb1950214cf" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.php" afterPath="$PROJECT_DIR$/test.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/wikidrain.class.php" afterPath="$PROJECT_DIR$/src/wikidrain.class.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="wikidrain.iws" />
@@ -28,10 +26,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="wikidrain.class.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="wikidrain.class.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/wikidrain.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="5" selection-start="350" selection-end="350" vertical-scroll-proportion="0.6173285" vertical-offset="0" max-vertical-offset="1584">
+            <state line="19" column="5" selection-start="350" selection-end="350" vertical-scroll-proportion="-14.25" vertical-offset="0" max-vertical-offset="1602">
               <folding>
                 <element signature="e#6#115#0" expanded="true" />
               </folding>
@@ -39,10 +37,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
+          <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+            <state />
+          </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state line="69" column="55" selection-start="2365" selection-end="2365" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1350">
+            <state line="29" column="4" selection-start="1037" selection-end="1037" vertical-scroll-proportion="0.9439421" vertical-offset="0" max-vertical-offset="1350">
               <folding />
             </state>
           </provider>
@@ -79,9 +80,9 @@
         <option value="$PROJECT_DIR$/src/wikidrain.php" />
         <option value="$PROJECT_DIR$/src/wikidrain_xml.class.php" />
         <option value="$PROJECT_DIR$/src/old_old_wikidrain.class.php" />
+        <option value="$PROJECT_DIR$/test.php" />
         <option value="$PROJECT_DIR$/src/wikidrain.class.php" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/test.php" />
       </list>
     </option>
   </component>
@@ -321,7 +322,11 @@
       <created>1388726221161</created>
       <updated>1388726221161</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Updated README.md&#10;">
+      <created>1388727946093</created>
+      <updated>1388727946093</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -340,7 +345,7 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294702" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18257576" sideWeight="0.6705298" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19621213" sideWeight="0.6009934" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19621213" sideWeight="0.6705298" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39900663" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294702" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -372,7 +377,8 @@
     <MESSAGE value="cleanup&#10;" />
     <MESSAGE value="rewrote wikidrain.class.php&#10;" />
     <MESSAGE value="fixed __destruct function error&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed __destruct function error&#10;" />
+    <MESSAGE value="Updated README.md&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated README.md&#10;" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -401,19 +407,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="55" selection-start="2365" selection-end="2365" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1350">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/wikidrain.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="5" selection-start="350" selection-end="350" vertical-scroll-proportion="0.6173285" vertical-offset="0" max-vertical-offset="1584">
+        <state line="19" column="5" selection-start="350" selection-end="350" vertical-scroll-proportion="-14.25" vertical-offset="0" max-vertical-offset="1602">
           <folding>
             <element signature="e#6#115#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="4" selection-start="1037" selection-end="1037" vertical-scroll-proportion="0.9439421" vertical-offset="0" max-vertical-offset="1350">
+          <folding />
         </state>
       </provider>
     </entry>
