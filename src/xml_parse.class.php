@@ -21,6 +21,7 @@ class xml_parse
 
     public function parseSearch($xml)
     {
+        $this->_count = 0;
         $this->_XML = new SimpleXMLElement($xml);
         foreach ($this->_XML->Section->Item as $item) {
             $this->_data[$this->_count] = array(
@@ -34,7 +35,17 @@ class xml_parse
 
     public function parseSections($xml)
     {
-
+        $this->_count = 0;
+        $this->_XML = new SimpleXMLElement($xml);
+        foreach ($this->_XML->parse->sections->s as $s) {
+            $this->_data[$this->_count] = array(
+                'title' => "{$s['line']}",
+                'index' => "{$s['index']}",
+                'position' => "{$s['number']}"
+            );
+            $this->_count++;
+        }
+        return $this->_data;
     }
 
 

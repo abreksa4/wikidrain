@@ -9,11 +9,9 @@ for ($i = 0; $i < 10; $i++) {
     print "Title: {$results[$i]['title']}, Description: {$results[$i]['description']}";
 }
 
-
-
-/*
 $results = $wiki->getSections('API');
-print $results;
+$results = $parse->parseSections($results);
+print_r($results);
 $results = $wiki->getText('API', '0');
 print $results;
 ?>
