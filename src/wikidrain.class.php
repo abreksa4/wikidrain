@@ -24,6 +24,7 @@ class wikidrain
         $this->_section = NULL;
     }
 
+
     public function Search($query, $numResult)
     {
         $this->_query = htmlspecialchars($query);
@@ -37,7 +38,7 @@ class wikidrain
         return $result;
     }
 
-    public function Sections($title)
+    public function getSections($title)
     {
         $this->_title = htmlspecialchars($title);
         $this->_apiParams['action'] = 'parse';
@@ -50,7 +51,7 @@ class wikidrain
         return $result;
     }
 
-    public function Text($title, $section)
+    public function getText($title, $section)
     {
         $this->_title = htmlspecialchars($title);
         $this->_section = htmlspecialchars($section);
@@ -78,4 +79,6 @@ class wikidrain
         return $result;
     }
 
-} 
+}
+
+?>

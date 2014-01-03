@@ -1,9 +1,10 @@
 <?php
 include('src/wikidrain.class.php');
-$wikidrain = new wikidrain();
-$results = $wikidrain->Search('API', 10);
+$wiki = new wikidrain();
+$results = $wiki->Search('API', 10);
 print $results;
-$results = $wikidrain->Sections('API');
+$results = $wiki->getSections('API');
 print $results;
-$results = $wikidrain->Text('API', '0');
+$results = $wiki->getText('API', '0');
 print $results;
+?>
