@@ -16,7 +16,7 @@ class wikidrain
     protected $_section;
 
 
-    private function __destruct()
+    function __destruct()
     {
         $this->_apiParams = NULL;
         $this->_query = NULL;
