@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b3f8b531-6b0d-4021-a655-2eb1950214cf" name="Default" comment="">
+      <change type="DELETED" beforePath="C:\xampp\htdocs\wikidrain\src\xml_parse.class.php" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.php" afterPath="$PROJECT_DIR$/test.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/wikidrain.class.php" afterPath="$PROJECT_DIR$/src/wikidrain.class.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/xml_parse.class.php" afterPath="$PROJECT_DIR$/src/xml_parse.class.php" />
     </list>
     <ignored path="wikidrain.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,7 +36,7 @@
       <file leaf-file-name="test.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="0" selection-start="581" selection-end="581" vertical-scroll-proportion="-13.5" vertical-offset="0" max-vertical-offset="432">
+            <state line="18" column="16" selection-start="661" selection-end="661" vertical-scroll-proportion="-13.5" vertical-offset="0" max-vertical-offset="468">
               <folding />
             </state>
           </provider>
@@ -43,7 +45,7 @@
       <file leaf-file-name="wikidrain.class.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/wikidrain.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="69" column="0" selection-start="1722" selection-end="1768" vertical-scroll-proportion="-9.0" vertical-offset="1026" max-vertical-offset="1656">
+            <state line="22" column="0" selection-start="518" selection-end="518" vertical-scroll-proportion="42.0" vertical-offset="1404" max-vertical-offset="2772">
               <folding>
                 <element signature="e#6#115#0" expanded="true" />
               </folding>
@@ -51,13 +53,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="xml_parse.class.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/xml_parse.class.php">
+      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+            <state />
+          </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="5" selection-start="354" selection-end="354" vertical-scroll-proportion="-0.5270758" vertical-offset="616" max-vertical-offset="1332">
-              <folding>
-                <element signature="e#6#116#0" expanded="true" />
-              </folding>
+            <state line="67" column="1" selection-start="2260" selection-end="2260" vertical-scroll-proportion="0.8047016" vertical-offset="761" max-vertical-offset="1314">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -84,14 +87,14 @@
         <option value="$PROJECT_DIR$/src/wikidrain.php" />
         <option value="$PROJECT_DIR$/src/wikidrain_xml.class.php" />
         <option value="$PROJECT_DIR$/src/old_old_wikidrain.class.php" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/src/wikia.php" />
         <option value="$PROJECT_DIR$/src/wikiparse.php" />
         <option value="$PROJECT_DIR$/wikia.incl.php" />
-        <option value="$PROJECT_DIR$/test.php" />
         <option value="$PROJECT_DIR$/src/xml_parse.class.php" />
         <option value="$PROJECT_DIR$/src/wikidrain.class.php" />
+        <option value="$PROJECT_DIR$/test.php" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -361,7 +364,11 @@
       <created>1388746410113</created>
       <updated>1388746410113</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="added check to remove the &quot;See also&quot;, &quot;References&quot;, and &quot;External links&quot; sections &#10;">
+      <created>1388747379732</created>
+      <updated>1388747379732</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -438,7 +445,8 @@
     <MESSAGE value="Started xml_parse&#10;" />
     <MESSAGE value="added parseSections&#10;" />
     <MESSAGE value="added parseText&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="added parseText&#10;" />
+    <MESSAGE value="added check to remove the &quot;See also&quot;, &quot;References&quot;, and &quot;External links&quot; sections &#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="added check to remove the &quot;See also&quot;, &quot;References&quot;, and &quot;External links&quot; sections &#10;" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -460,16 +468,6 @@
         <state line="10" column="0" selection-start="484" selection-end="484" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="288" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="87" selection-start="2200" selection-end="2200" vertical-scroll-proportion="0.5768535" vertical-offset="797" max-vertical-offset="1350">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="1" selection-start="306" selection-end="306" vertical-scroll-proportion="0.32490975" vertical-offset="0" max-vertical-offset="554">
@@ -479,26 +477,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="581" selection-end="581" vertical-scroll-proportion="-13.5" vertical-offset="0" max-vertical-offset="432">
+        <state line="18" column="16" selection-start="661" selection-end="661" vertical-scroll-proportion="-13.5" vertical-offset="0" max-vertical-offset="468">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/wikidrain.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="0" selection-start="1722" selection-end="1768" vertical-scroll-proportion="-9.0" vertical-offset="1026" max-vertical-offset="1656">
+        <state line="22" column="0" selection-start="518" selection-end="518" vertical-scroll-proportion="42.0" vertical-offset="1404" max-vertical-offset="2772">
           <folding>
             <element signature="e#6#115#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/xml_parse.class.php">
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="5" selection-start="354" selection-end="354" vertical-scroll-proportion="-0.5270758" vertical-offset="616" max-vertical-offset="1332">
-          <folding>
-            <element signature="e#6#116#0" expanded="true" />
-          </folding>
+        <state line="67" column="1" selection-start="2260" selection-end="2260" vertical-scroll-proportion="0.8047016" vertical-offset="761" max-vertical-offset="1314">
+          <folding />
         </state>
       </provider>
     </entry>

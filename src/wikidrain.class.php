@@ -14,6 +14,12 @@ class wikidrain
     protected $_query;
     protected $_title;
     protected $_section;
+    //XML vars
+    protected $_XML;
+    protected $_data = array();
+    protected $_count = 0;
+    protected $_string;
+    protected $_deadSections = array('See also', 'References', 'External links');
 
 
     function __destruct()
@@ -22,6 +28,10 @@ class wikidrain
         $this->_query = NULL;
         $this->_title = NULL;
         $this->_section = NULL;
+        //XML vars
+        $this->_XML = NULL;
+        $this->_data = NULL;
+        $this->_string = NULL;
     }
 
 
@@ -35,6 +45,7 @@ class wikidrain
             "suggest=false",
         );
         $result = $this->callApi();
+        $result = $this->parseSearch($result);
         return $result;
     }
 
@@ -48,6 +59,7 @@ class wikidrain
             "redirects=true",
         );
         $result = $this->callApi();
+        $result = $this->parseSections($result);
         return $result;
     }
 
@@ -64,6 +76,7 @@ class wikidrain
             "rvsection={$this->_section}",
         );
         $result = $this->callApi();
+        $result = $this->parseText($result);
         return $result;
     }
 
@@ -82,6 +95,54 @@ class wikidrain
         curl_setopt($curl, CURLOPT_USERAGENT, 'wikidrain/1.0 (http://www.example.com/)');
         $result = curl_exec($curl);
         return $result;
+    }
+
+    //XML parsing methods
+
+    private function parseSearch($xml)
+    {
+        $this->_count = 0;
+        $this->_XML = new SimpleXMLElement($xml);
+        foreach ($this->_XML->Section->Item as $item) {
+            $this->_data[$this->_count] = array(
+                "title" => "$item->Text",
+                "description" => "$item->Description",
+            );
+            $this->_count++;
+        }
+        return $this->_data;
+    }
+
+    private function parseSections($xml)
+    {
+        $this->_count = 0;
+        $this->_XML = new SimpleXMLElement($xml);
+        foreach ($this->_XML->parse->sections->s as $section) {
+            if (!in_array($section['line'], $this->_deadSections)) {
+                $this->_data[$this->_count] = array(
+                    'title' => "{$section['line']}",
+                    'index' => "{$section['index']}",
+                    'position' => "{$section['number']}"
+                );
+                $this->_count++;
+            }
+        }
+        return $this->_data;
+    }
+
+    private function parseText($xml)
+    {
+        //Totally cheating here, just replacing characters...
+        $this->_XML = new SimpleXMLElement($xml);
+        $this->_data = $this->_XML->query->pages->page->revisions->rev;
+        $string = $this->_data[0];
+        $string = preg_replace('/<ref[^>]*>([\s\S]*?)<\/ref[^>]*>/', '', $string);
+        $string = str_replace('|', '/', $string);
+        $string = str_replace('[[', '', $string);
+        $string = str_replace(']]', '', $string);
+        $string = preg_replace('/{{(.*?)\}}/s', '', $string);
+        $string = strip_tags($string);
+        return $string;
     }
 }
 

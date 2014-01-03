@@ -1,18 +1,20 @@
 <?php
+//Include wikidrain
 include('src/wikidrain.class.php');
-include('src/xml_parse.class.php');
+//Get a new instance of wikidrain
 $wiki = new wikidrain();
-$parser = new xml_parse();
+//Search for 'API'
 $results = $wiki->Search('API', 10);
-$results = $parser->parseSearch($results);
+//For each of the ten results, print the title and description
 for ($i = 0; $i < 10; $i++) {
     print "Title: {$results[$i]['title']}, Description: {$results[$i]['description']}";
 }
+//Get the sections of the 'API' page
 $results = $wiki->getSections('API');
-$results = $parser->parseSections($results);
+//Dump the array
 print_r($results);
+//Print the entire page, except for 'See also', 'References', and 'External links'
 foreach ($results as $section) {
     $text = $wiki->getText('API', "{$section['index']}");
-    $text = $parser->parseText($text);
     print $text;
 }
