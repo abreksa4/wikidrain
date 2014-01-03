@@ -13,6 +13,7 @@ class xml_parse
     protected $_data = array();
     protected $_count = 0;
     protected $_string;
+    protected $_deadSections = array('See also', 'References', 'External links');
 
     function __destruct()
     {
@@ -38,13 +39,15 @@ class xml_parse
     {
         $this->_count = 0;
         $this->_XML = new SimpleXMLElement($xml);
-        foreach ($this->_XML->parse->sections->s as $s) {
-            $this->_data[$this->_count] = array(
-                'title' => "{$s['line']}",
-                'index' => "{$s['index']}",
-                'position' => "{$s['number']}"
-            );
-            $this->_count++;
+        foreach ($this->_XML->parse->sections->s as $section) {
+            if (!in_array($section['line'], $this->_deadSections)) {
+                $this->_data[$this->_count] = array(
+                    'title' => "{$section['line']}",
+                    'index' => "{$section['index']}",
+                    'position' => "{$section['number']}"
+                );
+                $this->_count++;
+            }
         }
         return $this->_data;
     }

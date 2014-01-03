@@ -67,6 +67,11 @@ class wikidrain
         return $result;
     }
 
+    public function getRelated($title)
+    {
+
+    }
+
     private function callApi()
     {
         $params = implode('&', $this->_apiParams['params']);
