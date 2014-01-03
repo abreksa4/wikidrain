@@ -60,7 +60,7 @@ Currently, the objectives are as follows:
 1. Inclusion of a method to pull the "See Also" as an array, not just as a a section
    accessible by the getSection method
 
-2. An integrated class (or method) to parse the XML and return just text
+2. An integrated class (or method) to parse the XML and return just text [In the works]
 
 3. An integrated class (or method) to parse the WikiText and pull an array of the
    linked articles

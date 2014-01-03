@@ -78,7 +78,6 @@ class wikidrain
         $result = curl_exec($curl);
         return $result;
     }
-
 }
 
 ?>
