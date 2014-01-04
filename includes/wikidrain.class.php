@@ -241,6 +241,8 @@ class wikidrain
         $string = preg_replace('/<ref[^>]*>([\s\S]*?)<\/ref[^>]*>/', '', $string); //Removes <ref></ref> and the data inside
         $string = preg_replace('/{{(.*?)\}}/s', '', $string); //Removes the 'Magic Words'
         $string = preg_replace('/File:(.*?)\\n/s', '', $string); //Removes files
+        $string = preg_replace('/==(.*?)\==/s', '', $string); //Removes the section title from text
+        $string = str_replace("=\n", '', $string); //Same as above
         $string = str_replace('|', '/', $string); //Makes the wikilinks look better
         $string = str_replace('[[', '', $string); //Again, making the wikilinks look better
         $string = str_replace(']]', '', $string); //Same as above

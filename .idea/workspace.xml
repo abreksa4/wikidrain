@@ -54,7 +54,7 @@
       <file leaf-file-name="wikidrain.class.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/includes/wikidrain.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="23" selection-start="833" selection-end="833" vertical-scroll-proportion="0.75" vertical-offset="0" max-vertical-offset="4608">
+            <state line="231" column="69" selection-start="6264" selection-end="6264" vertical-scroll-proportion="2.3043478" vertical-offset="2886" max-vertical-offset="4644">
               <folding />
             </state>
           </provider>
@@ -446,7 +446,11 @@
       <created>1388863576497</created>
       <updated>1388863576497</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="slight optimization of get* functions">
+      <created>1388863649947</created>
+      <updated>1388863649947</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -624,13 +628,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="22" selection-start="123" selection-end="164" vertical-scroll-proportion="-2.7692308" vertical-offset="0" max-vertical-offset="558">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
         <state />
@@ -641,9 +638,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="22" selection-start="123" selection-end="164" vertical-scroll-proportion="-2.7692308" vertical-offset="0" max-vertical-offset="558">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/includes/wikidrain.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="23" selection-start="833" selection-end="833" vertical-scroll-proportion="0.75" vertical-offset="0" max-vertical-offset="4608">
+        <state line="231" column="69" selection-start="6264" selection-end="6264" vertical-scroll-proportion="2.3043478" vertical-offset="2886" max-vertical-offset="4644">
           <folding />
         </state>
       </provider>
