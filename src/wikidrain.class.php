@@ -34,8 +34,8 @@ class wikidrain
      *
      * Performs a wikipedia search for the supplied query, returns the results
      *
-     * @param $query
-     * @param $numResult
+     * @param $query string
+     * @param $numResult int
      * @return array|mixed
      */
     public function Search($query, $numResult)
@@ -57,7 +57,7 @@ class wikidrain
      *
      * Returns a multidimensional array containing the TOC of the supplied page
      *
-     * @param $title
+     * @param $title string
      * @return array|mixed
      */
     public function getSections($title)
@@ -79,8 +79,8 @@ class wikidrain
      *
      * Reruns parsed page text
      *
-     * @param $title
-     * @param $section
+     * @param $title string
+     * @param $section int
      * @return mixed|string
      */
     public function getText($title, $section)
@@ -105,7 +105,7 @@ class wikidrain
      *
      * Returns an array of related pages to the supplied page
      *
-     * @param $title
+     * @param $title string
      * @return array|mixed|string
      */
     public function getRelated($title)
@@ -127,7 +127,7 @@ class wikidrain
      *
      * Preps titles for use
      *
-     * @param $string
+     * @param $string string
      * @return mixed
      */
     public function prepTitle($string)
@@ -177,7 +177,7 @@ class wikidrain
      *
      * Parses the Search results
      *
-     * @param $xml
+     * @param $xml mixed
      * @return array
      */
     private function parseSearch($xml)
@@ -198,7 +198,7 @@ class wikidrain
      *
      * Parses the getSections results
      *
-     * @param $xml
+     * @param $xml mixed
      * @return array
      */
     private function parseSections($xml)
@@ -222,8 +222,8 @@ class wikidrain
      *
      * Parses the getText results
      *
-     * @param $xml
-     * @param $section
+     * @param $xml mixed
+     * @param $section int
      * @return mixed|string
      */
     private function parseText($xml, $section)
