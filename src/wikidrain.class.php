@@ -1,13 +1,14 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: Andrew Breksa
- * Project: wikidrain
- * File: wikidrain.class.php
- * Date: 1/2/14
- * Time: 8:46 PM
+ * wikidrain: A simple PHP wrapper for the WikiMedia API centralized around querying Wikipedia articles
+ *
+ * @package    wikidrain
+ * @copyright  Copyright (c) 2013-2014 Andrew Breksa <abreksa4@gmail.com>
+ * @license    https://www.gnu.org/licenses/old-licenses/fdl-1.2.txt   LGPL License
+ * @version    Release: @1.0@
+ * @link       https://github.com/abreksa4/wikidrain
+ * @since      Class available since Release 1.0
  */
-
 class wikidrain
 {
     protected $_apiURL = 'http://en.wikipedia.org/w/api.php?format=xml&';
@@ -23,13 +24,19 @@ class wikidrain
     protected $_string;
     protected $_deadSections = array('See also', 'References', 'External links');
 
-
     function __destruct()
     {
         $this->release();
     }
 
-
+    /**
+     *
+     * Performs a wikipedia search for the supplied query, returns the results
+     *
+     * @param $query
+     * @param $numResult
+     * @return array|mixed
+     */
     public function Search($query, $numResult)
     {
         $this->_query = htmlspecialchars($query);
@@ -45,6 +52,13 @@ class wikidrain
         return $result;
     }
 
+    /**
+     *
+     * Returns a multidimensional array containing the TOC of the supplied page
+     *
+     * @param $title
+     * @return array|mixed
+     */
     public function getSections($title)
     {
         $this->_title = htmlspecialchars($title);
@@ -60,6 +74,14 @@ class wikidrain
         return $result;
     }
 
+    /**
+     *
+     * Reruns parsed page text
+     *
+     * @param $title
+     * @param $section
+     * @return mixed|string
+     */
     public function getText($title, $section)
     {
         $this->_title = htmlspecialchars($title);
@@ -78,6 +100,13 @@ class wikidrain
         return $result;
     }
 
+    /**
+     *
+     * Returns an array of related pages to the supplied page
+     *
+     * @param $title
+     * @return array|mixed|string
+     */
     public function getRelated($title)
     {
         $this->_data = $this->getSections($title);
@@ -93,12 +122,22 @@ class wikidrain
 
     }
 
+    /**
+     *
+     * Preps titles for use
+     *
+     * @param $string
+     * @return mixed
+     */
     public function prepTitle($string)
     {
         $string = str_replace(' ', '_', $string);
         return $string;
     }
 
+    /**
+     * Releases the class properties to prevent the "complex types" error
+     */
     private function release()
     {
         $this->_apiParams = NULL;
@@ -113,6 +152,12 @@ class wikidrain
         $this->_string = NULL;
     }
 
+    /**
+     *
+     * Calls the wikmedia API
+     *
+     * @return mixed
+     */
     private function callApi()
     {
         $params = implode('&', $this->_apiParams['params']);
@@ -127,6 +172,13 @@ class wikidrain
 
     //XML parsing methods
 
+    /**
+     *
+     * Parses the Search results
+     *
+     * @param $xml
+     * @return array
+     */
     private function parseSearch($xml)
     {
         $this->_count = 0;
@@ -141,6 +193,13 @@ class wikidrain
         return $this->_data;
     }
 
+    /**
+     *
+     * Parses the getSections results
+     *
+     * @param $xml
+     * @return array
+     */
     private function parseSections($xml)
     {
         $this->_count = 0;
@@ -158,6 +217,14 @@ class wikidrain
         return $this->_data;
     }
 
+    /**
+     *
+     * Parses the getText results
+     *
+     * @param $xml
+     * @param $section
+     * @return mixed|string
+     */
     private function parseText($xml, $section)
     {
         //Totally cheating here, just replacing characters...
