@@ -3,6 +3,7 @@
 include('src/wikidrain.class.php');
 //Get a new instance of wikidrain
 $wiki = new wikidrain();
+
 //Search for 'API'
 $results = $wiki->Search('API', 10);
 //For each of the results, print the title and description
@@ -21,5 +22,5 @@ foreach ($results as $section) {
 //Print each of the 'See also' titles...
 $results = $wiki->getRelated('API');
 foreach ($results as $rec) {
-    print "Recommendation: {$rec};";
+    print "Recommendation: {$wiki->prepTitle($rec)};"; //Using the prepTitle method to prep the titles (replacing ' ' with '_')
 }

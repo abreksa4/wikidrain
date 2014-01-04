@@ -61,6 +61,14 @@ This returns an array...
     $wiki->getRelated('API');
     ?>
 
+To prep a title for use, use the prepTitle method.
+This returns a string...
+
+    <?php
+    $wiki = new wikidrain;
+    $title = $wiki->prepTitle('Plug-in (computing)');
+    ?>
+
 TODO:
 ===================================================================================
 
@@ -71,3 +79,5 @@ Currently, the objectives are as follows:
 2. A method to return the wikipedia donation banner
 
 3. Error checking
+
+4. Any improvement to the parseText method

@@ -73,7 +73,7 @@ class wikidrain
             "rvsection={$this->_section}",
         );
         $result = $this->callApi();
-        $result = $this->parseText($result);
+        $result = $this->parseText($result, $section);
         $this->release();
         return $result;
     }
@@ -91,6 +91,12 @@ class wikidrain
         $this->release();
         return $result;
 
+    }
+
+    public function prepTitle($string)
+    {
+        $string = str_replace(' ', '_', $string);
+        return $string;
     }
 
     private function release()
@@ -152,18 +158,23 @@ class wikidrain
         return $this->_data;
     }
 
-    private function parseText($xml)
+    private function parseText($xml, $section)
     {
         //Totally cheating here, just replacing characters...
         $this->_XML = new SimpleXMLElement($xml);
         $this->_data = $this->_XML->query->pages->page->revisions->rev;
         $string = $this->_data[0];
-        $string = preg_replace('/<ref[^>]*>([\s\S]*?)<\/ref[^>]*>/', '', $string);
-        $string = str_replace('|', '/', $string);
-        $string = str_replace('[[', '', $string);
-        $string = str_replace(']]', '', $string);
-        $string = preg_replace('/{{(.*?)\}}/s', '', $string);
-        $string = strip_tags($string);
+        if ($section == 0) {
+            $string = strstr($string, '\'\'\''); //This removes the images/info box if the section is the summary
+            $string = str_replace('\'\'\'', '"', $string); //Replaces the ''' around titles to be "
+        }
+        $string = preg_replace('/<ref[^>]*>([\s\S]*?)<\/ref[^>]*>/', '', $string); //Removes <ref></ref> and the data inside
+        $string = preg_replace('/{{(.*?)\}}/s', '', $string); //Removes the 'Magic Words'
+        $string = preg_replace('/File:(.*?)\\n/s', '', $string); //Removes files
+        $string = str_replace('|', '/', $string); //Makes the wikilinks look better
+        $string = str_replace('[[', '', $string); //Again, making the wikilinks look better
+        $string = str_replace(']]', '', $string); //Same as above
+        $string = strip_tags($string); //Just in case
         return $string;
     }
 }
