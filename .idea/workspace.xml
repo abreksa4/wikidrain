@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b3f8b531-6b0d-4021-a655-2eb1950214cf" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\xampp\htdocs\wikidrain\example.php" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/wikidrain.class.php" afterPath="$PROJECT_DIR$/src/wikidrain.class.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="wikidrain.iws" />
@@ -30,19 +30,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="test.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="test.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="0" selection-start="881" selection-end="881" vertical-scroll-proportion="0.84476537" vertical-offset="0" max-vertical-offset="576">
+            <state line="26" column="0" selection-start="881" selection-end="881" vertical-scroll-proportion="-18.0" vertical-offset="0" max-vertical-offset="576">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="wikidrain.class.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="wikidrain.class.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/wikidrain.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="222" column="6" selection-start="6032" selection-end="6032" vertical-scroll-proportion="-166.5" vertical-offset="0" max-vertical-offset="4536">
+            <state line="24" column="23" selection-start="854" selection-end="854" vertical-scroll-proportion="0.7826087" vertical-offset="0" max-vertical-offset="4554">
               <folding />
             </state>
           </provider>
@@ -91,8 +91,8 @@
         <option value="$PROJECT_DIR$/ok.html" />
         <option value="$PROJECT_DIR$/example.php" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/wikidrain.class.php" />
         <option value="$PROJECT_DIR$/test.php" />
+        <option value="$PROJECT_DIR$/src/wikidrain.class.php" />
       </list>
     </option>
   </component>
@@ -175,7 +175,7 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="preferences.sourceCode.PHP" />
+    <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.General" />
     <property name="recentsLimit" value="5" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FullScreen" value="false" />
@@ -395,7 +395,11 @@
       <created>1388828619730</created>
       <updated>1388828619730</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="Removed example.php">
+      <created>1388828712449</created>
+      <updated>1388828712449</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -408,7 +412,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18257576" sideWeight="0.6705298" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20227273" sideWeight="0.6705298" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20227273" sideWeight="0.76655626" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -453,7 +457,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="added wikidrain class&#10;" />
     <MESSAGE value="updated workspace&#10;&#10;" />
     <MESSAGE value="defining $_wikiBones&#10;&#10;" />
     <MESSAGE value="working on callApi&#10;" />
@@ -478,7 +481,8 @@
     <MESSAGE value="Added getRelated and release" />
     <MESSAGE value="Added prepTitle and improved parseText" />
     <MESSAGE value="Added docs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added docs" />
+    <MESSAGE value="Removed example.php" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed example.php" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -568,16 +572,16 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/wikidrain.class.php">
+    <entry file="file://$PROJECT_DIR$/test.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="222" column="6" selection-start="6032" selection-end="6032" vertical-scroll-proportion="-166.5" vertical-offset="0" max-vertical-offset="4536">
+        <state line="26" column="0" selection-start="881" selection-end="881" vertical-scroll-proportion="-18.0" vertical-offset="0" max-vertical-offset="576">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.php">
+    <entry file="file://$PROJECT_DIR$/src/wikidrain.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="0" selection-start="881" selection-end="881" vertical-scroll-proportion="0.84476537" vertical-offset="0" max-vertical-offset="576">
+        <state line="24" column="23" selection-start="854" selection-end="854" vertical-scroll-proportion="0.7826087" vertical-offset="0" max-vertical-offset="4554">
           <folding />
         </state>
       </provider>

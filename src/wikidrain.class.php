@@ -16,13 +16,14 @@ class wikidrain
     protected $_query;
     protected $_title;
     protected $_section;
-    protected $_tmp = array();
     //XML vars
     protected $_XML;
     protected $_data = array();
     protected $_count = 0;
-    protected $_string;
     protected $_deadSections = array('See also', 'References', 'External links');
+    //Shared vars
+    protected $_string;
+    protected $_tmp = array();
 
     function __destruct()
     {
