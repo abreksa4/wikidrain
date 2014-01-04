@@ -68,11 +68,10 @@ class wikidrain
      */
     public function getSections($title)
     {
-        $this->_title = htmlspecialchars($title);
         $this->_apiParams['action'] = 'parse';
         $this->_apiParams['params'] = array(
             "prop=sections",
-            "page={$this->_title}",
+            "page={$title}",
             "redirects=true",
         );
         $result = $this->callApi();
@@ -91,15 +90,13 @@ class wikidrain
      */
     public function getText($title, $section)
     {
-        $this->_title = htmlspecialchars($title);
-        $this->_section = htmlspecialchars($section);
         $this->_apiParams['action'] = 'query';
         $this->_apiParams['params'] = array(
             "prop=revisions",
-            "titles={$this->_title}",
+            "titles={$title}",
             "redirects=true",
             "rvprop=content",
-            "rvsection={$this->_section}",
+            "rvsection={$section}",
         );
         $result = $this->callApi();
         $result = $this->parseText($result, $section);
@@ -139,6 +136,7 @@ class wikidrain
     public function prepTitle($string)
     {
         $string = str_replace(' ', '_', $string);
+        $string = htmlspecialchars($string);
         return $string;
     }
 

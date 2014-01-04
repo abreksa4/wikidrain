@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b3f8b531-6b0d-4021-a655-2eb1950214cf" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api.php" afterPath="$PROJECT_DIR$/api.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.php" afterPath="$PROJECT_DIR$/test.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/wikidrain.class.php" afterPath="$PROJECT_DIR$/includes/wikidrain.class.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="wikidrain.iws" />
@@ -31,24 +30,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="test.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="22" selection-start="123" selection-end="164" vertical-scroll-proportion="-2.7692308" vertical-offset="0" max-vertical-offset="558">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="wikidrain.class.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/includes/wikidrain.class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="24" selection-start="635" selection-end="635" vertical-scroll-proportion="4.8461537" vertical-offset="432" max-vertical-offset="4698">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
@@ -61,10 +42,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="api.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="test.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="22" selection-start="123" selection-end="164" vertical-scroll-proportion="-2.7692308" vertical-offset="0" max-vertical-offset="558">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="wikidrain.class.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/includes/wikidrain.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="103" column="23" selection-start="2854" selection-end="2854" vertical-scroll-proportion="-1.3043479" vertical-offset="2574" max-vertical-offset="4680">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="api.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="80" selection-start="638" selection-end="638" vertical-scroll-proportion="0.5543478" vertical-offset="0" max-vertical-offset="738">
+            <state line="35" column="0" selection-start="1225" selection-end="1225" vertical-scroll-proportion="-24.23077" vertical-offset="0" max-vertical-offset="738">
               <folding />
             </state>
           </provider>
@@ -101,10 +100,10 @@
         <option value="$PROJECT_DIR$/src/wikidrain.class.php" />
         <option value="$PROJECT_DIR$/wikidrain_portal.php" />
         <option value="$PROJECT_DIR$/example.php" />
-        <option value="$PROJECT_DIR$/includes/wikidrain.class.php" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/test.php" />
         <option value="$PROJECT_DIR$/api.php" />
+        <option value="$PROJECT_DIR$/includes/wikidrain.class.php" />
       </list>
     </option>
   </component>
@@ -439,7 +438,11 @@
       <created>1388862956154</created>
       <updated>1388862956154</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="minor clean up">
+      <created>1388863065375</created>
+      <updated>1388863065375</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -610,19 +613,19 @@
         <state line="10" column="1" selection-start="306" selection-end="306" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="288" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="0" selection-start="1225" selection-end="1225" vertical-scroll-proportion="-24.23077" vertical-offset="0" max-vertical-offset="738">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state line="27" column="0" selection-start="1032" selection-end="1032" vertical-scroll-proportion="-12.96" vertical-offset="162" max-vertical-offset="1656">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/wikidrain.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="24" selection-start="635" selection-end="635" vertical-scroll-proportion="4.8461537" vertical-offset="432" max-vertical-offset="4698">
           <folding />
         </state>
       </provider>
@@ -634,9 +637,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api.php">
+    <entry file="file://$PROJECT_DIR$/includes/wikidrain.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="80" selection-start="638" selection-end="638" vertical-scroll-proportion="0.5543478" vertical-offset="0" max-vertical-offset="738">
+        <state line="103" column="23" selection-start="2854" selection-end="2854" vertical-scroll-proportion="-1.3043479" vertical-offset="2574" max-vertical-offset="4680">
           <folding />
         </state>
       </provider>
