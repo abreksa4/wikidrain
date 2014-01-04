@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b3f8b531-6b0d-4021-a655-2eb1950214cf" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/wikidrain.class.php" afterPath="$PROJECT_DIR$/src/wikidrain.class.php" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\wikidrain\example.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="wikidrain.iws" />
@@ -43,7 +42,7 @@
       <file leaf-file-name="wikidrain.class.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/wikidrain.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="222" column="6" selection-start="6032" selection-end="6032" vertical-scroll-proportion="-0.5833333" vertical-offset="3982" max-vertical-offset="4536">
+            <state line="222" column="6" selection-start="6032" selection-end="6032" vertical-scroll-proportion="-166.5" vertical-offset="0" max-vertical-offset="4536">
               <folding />
             </state>
           </provider>
@@ -392,7 +391,11 @@
       <created>1388827012525</created>
       <updated>1388827012525</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="Added docs">
+      <created>1388828619730</created>
+      <updated>1388828619730</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -450,7 +453,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="added wikidrain class" />
     <MESSAGE value="added wikidrain class&#10;" />
     <MESSAGE value="updated workspace&#10;&#10;" />
     <MESSAGE value="defining $_wikiBones&#10;&#10;" />
@@ -475,7 +477,8 @@
     <MESSAGE value="Added getRelated" />
     <MESSAGE value="Added getRelated and release" />
     <MESSAGE value="Added prepTitle and improved parseText" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added prepTitle and improved parseText" />
+    <MESSAGE value="Added docs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added docs" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -550,13 +553,6 @@
         <state line="10" column="0" selection-start="484" selection-end="484" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="288" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/example.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="100" selection-start="678" selection-end="678" vertical-scroll-proportion="0.71480143" vertical-offset="0" max-vertical-offset="972">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="1" selection-start="306" selection-end="306" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="288" />
@@ -574,7 +570,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/wikidrain.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="222" column="6" selection-start="6032" selection-end="6032" vertical-scroll-proportion="-0.5833333" vertical-offset="3982" max-vertical-offset="4536">
+        <state line="222" column="6" selection-start="6032" selection-end="6032" vertical-scroll-proportion="-166.5" vertical-offset="0" max-vertical-offset="4536">
           <folding />
         </state>
       </provider>
