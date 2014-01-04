@@ -14,8 +14,6 @@ class wikidrain
     protected $_apiURL = 'http://en.wikipedia.org/w/api.php?format=xml&';
     protected $_apiParams = array();
     protected $_query;
-    protected $_title;
-    protected $_section;
     protected $_userAgent;
     //XML vars
     protected $_XML;
@@ -147,8 +145,6 @@ class wikidrain
     {
         $this->_apiParams = NULL;
         $this->_query = NULL;
-        $this->_title = NULL;
-        $this->_section = NULL;
         //XML vars
         $this->_XML = NULL;
         $this->_data = NULL;
