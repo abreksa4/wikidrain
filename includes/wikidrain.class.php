@@ -16,6 +16,7 @@ class wikidrain
     protected $_query;
     protected $_title;
     protected $_section;
+    protected $_userAgent;
     //XML vars
     protected $_XML;
     protected $_data = array();
@@ -24,6 +25,11 @@ class wikidrain
     //Shared vars
     protected $_string;
     protected $_tmp = array();
+
+    function __construct($userAgent)
+    {
+        $this->_userAgent = $userAgent;
+    }
 
     function __destruct()
     {
@@ -166,7 +172,7 @@ class wikidrain
         $curl = curl_init();
         curl_setopt($curl, CURLOPT_URL, $url);
         curl_setopt($curl, CURLOPT_RETURNTRANSFER, TRUE);
-        curl_setopt($curl, CURLOPT_USERAGENT, 'wikidrain/1.0 (http://www.example.com/)');
+        curl_setopt($curl, CURLOPT_USERAGENT, $this->_userAgent);
         $result = curl_exec($curl);
         return $result;
     }
@@ -203,6 +209,7 @@ class wikidrain
      */
     private function parseSections($xml)
     {
+        // TODO: Possibly return as multidimensional array, using index/position as markers...
         $this->_count = 0;
         $this->_XML = new SimpleXMLElement($xml);
         foreach ($this->_XML->parse->sections->s as $section) {
@@ -228,6 +235,7 @@ class wikidrain
      */
     private function parseText($xml, $section)
     {
+        // TODO: Actually parse the wikitext, not just clean it up...
         //Totally cheating here, just replacing characters...
         $this->_XML = new SimpleXMLElement($xml);
         $this->_data = $this->_XML->query->pages->page->revisions->rev;
