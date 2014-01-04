@@ -15,15 +15,19 @@ Usage:
 
 wikidrain is very simple to use, just make a new instance of wikidrain:
 
+
     <?php
-    $wiki = new wikidrain();
+    $wiki = new wikidrain('wikidrain/1.0 (http://www.example.com/)');
     ?>
+
+NOTE: You must supply your user-agent info, here the example header is:
+      'wikidrain/1.0 (http://www.example.com/)'
 
 To search wikipedia for articles, use the Search method:
 This returns a multidimensional array...
 
     <?php
-    $wiki = new wikidrain();
+    $wiki = new wikidrain('wikidrain/1.0 (http://www.example.com/)');
     $result = $wiki->Search('API');
     ?>
 
@@ -31,7 +35,7 @@ To get the sections of a wikipedia page, use the getSections method:
 This also returns a multidimensional array...
 
     <?php
-    $wiki = new wikidrain();
+    $wiki = new wikidrain('wikidrain/1.0 (http://www.example.com/)');
     $result = $wiki->getSections('API');
     ?>
 
@@ -44,7 +48,7 @@ method.
 This returns text...
 
     <?php
-    $wiki = new wikidrain();
+    $wiki = new wikidrain('wikidrain/1.0 (http://www.example.com/)');
     $result = $wiki->getText('API', '0');
     ?>
 
@@ -57,7 +61,7 @@ method
 This returns an array...
 
     <?php
-    $wiki = new wikidrain();
+    $wiki = new wikidrain('wikidrain/1.0 (http://www.example.com/)');
     $wiki->getRelated('API');
     ?>
 
@@ -65,7 +69,7 @@ To prep titles for use, use the prepTitle method.
 This returns a string...
 
     <?php
-    $wiki = new wikidrain;
+    $wiki = new wikidrain('wikidrain/1.0 (http://www.example.com/)');
     $title = $wiki->prepTitle('Plug-in (computing)');
     ?>
 

@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b3f8b531-6b0d-4021-a655-2eb1950214cf" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="wikidrain.iws" />
@@ -41,7 +42,19 @@
       <file leaf-file-name="wikidrain.class.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/includes/wikidrain.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="6" selection-start="442" selection-end="442" vertical-scroll-proportion="-7.076923" vertical-offset="14" max-vertical-offset="4698">
+            <state line="17" column="24" selection-start="635" selection-end="635" vertical-scroll-proportion="-11.769231" vertical-offset="0" max-vertical-offset="4698">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="47" selection-start="932" selection-end="932" vertical-scroll-proportion="-16.56" vertical-offset="0" max-vertical-offset="1656">
               <folding />
             </state>
           </provider>
@@ -84,13 +97,13 @@
         <option value="$PROJECT_DIR$/src/xml_parse.class.php" />
         <option value="$PROJECT_DIR$/example.html" />
         <option value="$PROJECT_DIR$/ok.html" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/wikidrain.class.php" />
         <option value="$PROJECT_DIR$/wikidrain_portal.php" />
         <option value="$PROJECT_DIR$/example.php" />
         <option value="$PROJECT_DIR$/api.php" />
         <option value="$PROJECT_DIR$/test.php" />
         <option value="$PROJECT_DIR$/includes/wikidrain.class.php" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -413,7 +426,11 @@
       <created>1388862612823</created>
       <updated>1388862612823</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="Added __construct for variable useragent info">
+      <created>1388862621850</created>
+      <updated>1388862621850</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -438,7 +455,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1374" height="748" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294702" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2334437" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -584,16 +601,6 @@
         <state line="10" column="1" selection-start="306" selection-end="306" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="288" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="42" selection-start="2478" selection-end="2478" vertical-scroll-proportion="0.8054054" vertical-offset="1029" max-vertical-offset="1584">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="1" selection-start="926" selection-end="926" vertical-scroll-proportion="-17.307692" vertical-offset="0" max-vertical-offset="558">
@@ -603,7 +610,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/includes/wikidrain.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="6" selection-start="442" selection-end="442" vertical-scroll-proportion="-7.076923" vertical-offset="14" max-vertical-offset="4698">
+        <state line="17" column="24" selection-start="635" selection-end="635" vertical-scroll-proportion="-11.769231" vertical-offset="0" max-vertical-offset="4698">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="47" selection-start="932" selection-end="932" vertical-scroll-proportion="-16.56" vertical-offset="0" max-vertical-offset="1656">
           <folding />
         </state>
       </provider>
