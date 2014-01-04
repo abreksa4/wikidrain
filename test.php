@@ -1,6 +1,6 @@
 <?php
 //Include wikidrain
-include('src/wikidrain.class.php');
+include('includes/wikidrain.class.php');
 //Get a new instance of wikidrain
 $wiki = new wikidrain();
 
