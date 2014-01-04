@@ -31,10 +31,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="test.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="test.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="82" selection-start="601" selection-end="601" vertical-scroll-proportion="0.5217391" vertical-offset="0" max-vertical-offset="558">
+            <state line="4" column="22" selection-start="123" selection-end="164" vertical-scroll-proportion="-2.7692308" vertical-offset="0" max-vertical-offset="558">
               <folding />
             </state>
           </provider>
@@ -43,7 +43,7 @@
       <file leaf-file-name="wikidrain.class.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/includes/wikidrain.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="24" selection-start="635" selection-end="635" vertical-scroll-proportion="-11.769231" vertical-offset="0" max-vertical-offset="4698">
+            <state line="17" column="24" selection-start="635" selection-end="635" vertical-scroll-proportion="4.8461537" vertical-offset="432" max-vertical-offset="4698">
               <folding />
             </state>
           </provider>
@@ -55,16 +55,16 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="47" selection-start="932" selection-end="932" vertical-scroll-proportion="-16.56" vertical-offset="0" max-vertical-offset="1656">
+            <state line="27" column="0" selection-start="1032" selection-end="1032" vertical-scroll-proportion="-12.96" vertical-offset="162" max-vertical-offset="1656">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="api.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="api.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/api.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="102" selection-start="1118" selection-end="1118" vertical-scroll-proportion="-13.153846" vertical-offset="162" max-vertical-offset="738">
+            <state line="17" column="80" selection-start="638" selection-end="638" vertical-scroll-proportion="0.5543478" vertical-offset="0" max-vertical-offset="738">
               <folding />
             </state>
           </provider>
@@ -103,8 +103,8 @@
         <option value="$PROJECT_DIR$/example.php" />
         <option value="$PROJECT_DIR$/includes/wikidrain.class.php" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/api.php" />
         <option value="$PROJECT_DIR$/test.php" />
+        <option value="$PROJECT_DIR$/api.php" />
       </list>
     </option>
   </component>
@@ -435,7 +435,11 @@
       <created>1388862821770</created>
       <updated>1388862821770</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="minor clean up">
+      <created>1388862956154</created>
+      <updated>1388862956154</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -491,7 +495,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="working on searchWiki and callApi&#10;" />
     <MESSAGE value="working on searchWiki, sectionsWiki, and callApi&#10;" />
     <MESSAGE value="working on summaryWiki&#10;" />
     <MESSAGE value="working on summaryWiki... still &#10;" />
@@ -516,7 +519,8 @@
     <MESSAGE value="added api.php" />
     <MESSAGE value="Added __construct for variable useragent info" />
     <MESSAGE value="Updated README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated README.md" />
+    <MESSAGE value="minor clean up" />
+    <option name="LAST_COMMIT_MESSAGE" value="minor clean up" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -606,33 +610,33 @@
         <state line="10" column="1" selection-start="306" selection-end="306" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="288" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="102" selection-start="1118" selection-end="1118" vertical-scroll-proportion="-13.153846" vertical-offset="162" max-vertical-offset="738">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="47" selection-start="932" selection-end="932" vertical-scroll-proportion="-16.56" vertical-offset="0" max-vertical-offset="1656">
+        <state line="27" column="0" selection-start="1032" selection-end="1032" vertical-scroll-proportion="-12.96" vertical-offset="162" max-vertical-offset="1656">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/includes/wikidrain.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="24" selection-start="635" selection-end="635" vertical-scroll-proportion="-11.769231" vertical-offset="0" max-vertical-offset="4698">
+        <state line="17" column="24" selection-start="635" selection-end="635" vertical-scroll-proportion="4.8461537" vertical-offset="432" max-vertical-offset="4698">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="82" selection-start="601" selection-end="601" vertical-scroll-proportion="0.5217391" vertical-offset="0" max-vertical-offset="558">
+        <state line="4" column="22" selection-start="123" selection-end="164" vertical-scroll-proportion="-2.7692308" vertical-offset="0" max-vertical-offset="558">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="80" selection-start="638" selection-end="638" vertical-scroll-proportion="0.5543478" vertical-offset="0" max-vertical-offset="738">
           <folding />
         </state>
       </provider>

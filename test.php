@@ -2,7 +2,7 @@
 //Include wikidrain
 include('includes/wikidrain.class.php');
 //Get a new instance of wikidrain
-$wiki = new wikidrain('wikidrain/1.0 (http://www.example.com/); (abreksa4@gmail.com)');
+$wiki = new wikidrain('wikidrain/1.0 (http://www.example.com/)');
 
 //Search for 'API'
 $results = $wiki->Search('API', 10);
