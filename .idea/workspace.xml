@@ -4,7 +4,7 @@
     <list default="true" readonly="true" id="b3f8b531-6b0d-4021-a655-2eb1950214cf" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
-    <ignored path=".idea/" />
+    <ignored path=".idea/*" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -461,7 +461,11 @@
       <created>1388907715095</created>
       <updated>1388907715095</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="..">
+      <created>1388908026751</created>
+      <updated>1388908026751</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -517,7 +521,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="used public for $_limResult&#10;" />
     <MESSAGE value="summaryWiki now sectionWiki&#10;" />
     <MESSAGE value="cleanup&#10;" />
     <MESSAGE value="rewrote wikidrain.class.php&#10;" />
@@ -542,7 +545,8 @@
     <MESSAGE value="slight optimization of get* functions" />
     <MESSAGE value="now removes the ==Section== text..." />
     <MESSAGE value="optimized ==section== text removal" />
-    <option name="LAST_COMMIT_MESSAGE" value="optimized ==section== text removal" />
+    <MESSAGE value=".." />
+    <option name="LAST_COMMIT_MESSAGE" value=".." />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
