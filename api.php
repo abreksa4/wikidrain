@@ -31,5 +31,11 @@ while (isset($_GET['action']) & isset($_GET['query'])) {
             $results = $wikidrain->getText($query, $section);
             return $results;
             break;
+        case('related'):
+            $wikidrain = new wikidrain('wikidrain/1.0 (http://www.example.com/)');
+            $query = $wikidrain->prepTitle($query);
+            $results = $wikidrain->getRelated($query);
+            return $results;
+            break;
     }
 }
