@@ -229,25 +229,19 @@ class wikidrain
      */
     private function parseText($xml, $section)
     {
-        // TODO: Actually parse the wikitext, not just clean it up...
-        // TODO: Use the preg_replace model to extract the wikilinks, build array of values
-        //Totally cheating here, just replacing characters...
         $this->_XML = new SimpleXMLElement($xml);
         $this->_data = $this->_XML->query->pages->page->revisions->rev;
         $string = $this->_data[0];
+
         if ($section == 0) {
             $string = strstr($string, '\'\'\''); //This removes the images/info box if the section is the summary
             $string = str_replace('\'\'\'', '"', $string); //Replaces the ''' around titles to be "
         }
-
-        $string = preg_replace('/<ref[^>]*>([\s\S]*?)<\/ref[^>]*>/', '', $string); //Removes <ref></ref> and the data inside
-        $string = preg_replace('/{{(.*?)\}}/s', '', $string); //Removes the 'Magic Words'
-        $string = preg_replace('/File:(.*?)\\n/s', '', $string); //Removes files
-        $string = preg_replace('/==(.*?)\=\\n/s', '', $string); //Removes the section title from text
+        $string = preg_replace('/<ref[^>]*>[^<]+<\/ref[^>]*>|\{{(?>[^}]++|}(?!}))\}}|==*[^=]+=*\n|File:(.*?)\n|\[\[|\]]|\n/', '', $string); //Compliments of Jerry [http://unknownoo8.deviantart.com/]
+        //|\s{2,}
         $string = str_replace('|', '/', $string); //Makes the wikilinks look better
-        $string = str_replace('[[', '', $string); //Again, making the wikilinks look better
-        $string = str_replace(']]', '', $string); //Same as above
         $string = strip_tags($string); //Just in case
+
         return $string;
     }
 }

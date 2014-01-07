@@ -3,7 +3,6 @@
 include('includes/wikidrain.class.php');
 //Get a new instance of wikidrain
 $wiki = new wikidrain('wikidrain/1.0 (http://www.example.com/)');
-
 //Search for 'API'
 $results = $wiki->Search('API', 10);
 //For each of the results, print the title and description
@@ -18,6 +17,7 @@ print_r($results);
 foreach ($results as $section) {
     $text = $wiki->getText('API', "{$section['index']}");
     print $text;
+    print "\n";
 }
 //Print each of the 'See also' titles...
 $results = $wiki->getRelated('API');
