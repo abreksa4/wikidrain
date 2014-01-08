@@ -65,13 +65,6 @@ This returns an array...
     $wiki->getRelated('API');
     ?>
 
-To prep titles for use, use the prepTitle method.
-This returns a string...
-
-    <?php
-    $wiki = new wikidrain('wikidrain/1.0 (http://www.example.com/)');
-    $title = $wiki->prepTitle('Plug-in (computing)');
-    ?>
 
 TODO:
 ===================================================================================

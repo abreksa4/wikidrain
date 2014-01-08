@@ -8,15 +8,13 @@ while (isset($_GET['action']) & isset($_GET['query'])) {
     } else {
         $numresults = 10;
     }
+    $wikidrain = new wikidrain('wikidrain/1.0 (http://www.example.com/)');
     switch ($action) {
         case('search'):
-            $wikidrain = new wikidrain('wikidrain/1.0 (http://www.example.com/)');
             $results = $wikidrain->Search($query, $numresults);
             return $results;
             break;
         case('sections'):
-            $wikidrain = new wikidrain('wikidrain/1.0 (http://www.example.com/)');
-            $query = $wikidrain->prepTitle($query);
             $results = $wikidrain->getSections($query);
             return $results;
             break;
@@ -26,14 +24,10 @@ while (isset($_GET['action']) & isset($_GET['query'])) {
             } else {
                 $section = 0;
             }
-            $wikidrain = new wikidrain('wikidrain/1.0 (http://www.example.com/)');
-            $query = $wikidrain->prepTitle($query);
             $results = $wikidrain->getText($query, $section);
             return $results;
             break;
         case('related'):
-            $wikidrain = new wikidrain('wikidrain/1.0 (http://www.example.com/)');
-            $query = $wikidrain->prepTitle($query);
             $results = $wikidrain->getRelated($query);
             return $results;
             break;

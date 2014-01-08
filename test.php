@@ -22,5 +22,5 @@ foreach ($results as $section) {
 //Print each of the 'See also' titles...
 $results = $wiki->getRelated('API');
 foreach ($results as $rec) {
-    print "Recommendation: {$wiki->prepTitle($rec)};"; //Using the prepTitle method to prep the titles (replacing ' ' with '_')
+    print "Recommendation: {$rec};";
 }

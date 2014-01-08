@@ -69,7 +69,7 @@ class wikidrain
         $this->_apiParams['action'] = 'parse';
         $this->_apiParams['params'] = array(
             "prop=sections",
-            "page={$title}",
+            "page={$this->prepTitle($title)}",
             "redirects=true",
         );
         $result = $this->callApi();
@@ -91,7 +91,7 @@ class wikidrain
         $this->_apiParams['action'] = 'query';
         $this->_apiParams['params'] = array(
             "prop=revisions",
-            "titles={$title}",
+            "titles={$this->prepTitle($title)}",
             "redirects=true",
             "rvprop=content",
             "rvsection={$section}",
@@ -111,6 +111,7 @@ class wikidrain
      */
     public function getRelated($title)
     {
+        $title = $this->prepTitle($title);
         $this->_data = $this->getSections($title);
         $this->_string = count($this->_data) + 1;
         $result = $this->getText($title, $this->_string);
@@ -124,19 +125,6 @@ class wikidrain
 
     }
 
-    /**
-     *
-     * Preps titles for use
-     *
-     * @param $string string
-     * @return mixed
-     */
-    public function prepTitle($string)
-    {
-        $string = str_replace(' ', '_', $string);
-        $string = htmlspecialchars($string);
-        return $string;
-    }
 
     /**
      * Releases the class properties to prevent the "complex types" error
@@ -151,6 +139,20 @@ class wikidrain
         //Shared
         $this->_tmp = NULL;
         $this->_string = NULL;
+    }
+
+    /**
+     *
+     * Preps titles for use
+     *
+     * @param $string string
+     * @return mixed
+     */
+    private function prepTitle($string)
+    {
+        $string = str_replace(' ', '_', $string);
+        $string = htmlspecialchars($string);
+        return $string;
     }
 
     /**
