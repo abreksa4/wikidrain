@@ -19,10 +19,10 @@ class wikidrain
     protected $_XML;
     protected $_data = array();
     protected $_count = 0;
-    protected $_deadSections = array('See also', 'References', 'External links');
+    protected $_deadSections = array('Notes', 'Further reading', 'See also', 'References', 'External links');
     //Shared vars
     protected $_string;
-    protected $_tmp = array();
+    protected $_json;
 
     function __construct($userAgent)
     {
@@ -125,7 +125,6 @@ class wikidrain
 
     }
 
-
     /**
      * Releases the class properties to prevent the "complex types" error
      */
@@ -137,7 +136,6 @@ class wikidrain
         $this->_XML = NULL;
         $this->_data = NULL;
         //Shared
-        $this->_tmp = NULL;
         $this->_string = NULL;
     }
 
@@ -243,7 +241,6 @@ class wikidrain
         //|\s{2,}
         $string = str_replace('|', '/', $string); //Makes the wikilinks look better
         $string = strip_tags($string); //Just in case
-
         return $string;
     }
 }

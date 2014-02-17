@@ -24,3 +24,4 @@ $results = $wiki->getRelated('API');
 foreach ($results as $rec) {
     print "Recommendation: {$rec};";
 }
+
