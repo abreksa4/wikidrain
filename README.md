@@ -15,10 +15,11 @@ Usage:
 
 wikidrain is very simple to use, just make a new instance of wikidrain:
 
-
-    <?php
+```php
+<?php
     $wiki = new wikidrain('wikidrain/1.0 (http://www.example.com/)');
-    ?>
+?>
+```
 
 NOTE: You must supply your user-agent info, here the example header is:
       'wikidrain/1.0 (http://www.example.com/)'
@@ -26,18 +27,22 @@ NOTE: You must supply your user-agent info, here the example header is:
 To search wikipedia for articles, use the Search method:
 This returns a multidimensional array...
 
-    <?php
+```php
+<?php
     $wiki = new wikidrain('wikidrain/1.0 (http://www.example.com/)');
     $result = $wiki->Search('API');
-    ?>
+?>
+```
 
 To get the sections of a wikipedia page, use the getSections method:
 This also returns a multidimensional array...
 
-    <?php
+```php
+<?php
     $wiki = new wikidrain('wikidrain/1.0 (http://www.example.com/)');
     $result = $wiki->getSections('API');
-    ?>
+?>
+```
 
 NOTE: Wikidrain does not include any error checking/verification that the article
       exists, so be sure to only request the sections/text of articles that were
@@ -47,10 +52,12 @@ To get the text of a section from a wikipedia page, use the getText
 method.
 This returns text...
 
-    <?php
+```php
+<?php
     $wiki = new wikidrain('wikidrain/1.0 (http://www.example.com/)');
     $result = $wiki->getText('API', '0');
-    ?>
+?>
+```
 
 NOTE: Again, wikidrain does not include any error checking/verification to determine
       if an article or section exists, so make sure to only request data from pages/
@@ -60,10 +67,12 @@ To get the list of articles listed in the 'See also' section, use the getRelated
 method
 This returns an array...
 
-    <?php
+```php
+<?php
     $wiki = new wikidrain('wikidrain/1.0 (http://www.example.com/)');
     $wiki->getRelated('API');
-    ?>
+?>
+```
 
 
 TODO:
