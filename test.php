@@ -10,7 +10,7 @@ foreach ($results as $res) {
     print "Title: {$res['title']}, Description: {$res['description']}";
     print '<p></p>';
 }
-/*
+
 //Get the sections of the 'API' page
 $results = $wiki->getSections('API');
 //Dump the array
@@ -26,5 +26,3 @@ $results = $wiki->getRelated('API');
 foreach ($results as $rec) {
     print "Recommendation: {$rec};";
 }
-*/
-

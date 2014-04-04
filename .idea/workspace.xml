@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b3f8b531-6b0d-4021-a655-2eb1950214cf" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/def.php" afterPath="$PROJECT_DIR$/def.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.php" afterPath="$PROJECT_DIR$/test.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path=".idea/*" />
@@ -45,19 +44,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="test.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="13" selection-start="290" selection-end="413" vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="612">
+            <state line="27" column="1" selection-start="880" selection-end="880" vertical-scroll-proportion="0.9025788" vertical-offset="144" max-vertical-offset="561">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="7" selection-start="426" selection-end="426" vertical-scroll-proportion="0.77936965" vertical-offset="0" max-vertical-offset="391">
+            <state line="16" column="7" selection-start="426" selection-end="426" vertical-scroll-proportion="-10.461538" vertical-offset="0" max-vertical-offset="391">
               <folding />
             </state>
           </provider>
@@ -66,7 +65,7 @@
       <file leaf-file-name="def.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/def.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="44" selection-start="449" selection-end="449" vertical-scroll-proportion="-4.576923" vertical-offset="255" max-vertical-offset="612">
+            <state line="22" column="44" selection-start="451" selection-end="451" vertical-scroll-proportion="-4.576923" vertical-offset="255" max-vertical-offset="612">
               <folding>
                 <element signature="e#6#84#0" expanded="true" />
               </folding>
@@ -115,9 +114,9 @@
         <option value="$PROJECT_DIR$/includes/wikidrain2.class.php" />
         <option value="$PROJECT_DIR$/search.php" />
         <option value="$PROJECT_DIR$/includes/wikidrain.class.php" />
-        <option value="$PROJECT_DIR$/test.php" />
         <option value="$PROJECT_DIR$/def.php" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/test.php" />
       </list>
     </option>
   </component>
@@ -558,7 +557,11 @@
       <created>1396644608662</created>
       <updated>1396644608662</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="added a basic search page for my girlfriend's culinary homework">
+      <created>1396645885974</created>
+      <updated>1396645885974</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -617,7 +620,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Started xml_parse&#10;" />
     <MESSAGE value="added parseSections&#10;" />
     <MESSAGE value="added parseText&#10;" />
     <MESSAGE value="added check to remove the &quot;See also&quot;, &quot;References&quot;, and &quot;External links&quot; sections &#10;" />
@@ -642,7 +644,8 @@
     <MESSAGE value="Some crazy regex" />
     <MESSAGE value="made prepTitle mandatory&#10;" />
     <MESSAGE value="tweaking&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="tweaking&#10;" />
+    <MESSAGE value="added a basic search page for my girlfriend's culinary homework" />
+    <option name="LAST_COMMIT_MESSAGE" value="added a basic search page for my girlfriend's culinary homework" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -737,16 +740,9 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="13" selection-start="290" selection-end="413" vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="612">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/def.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="44" selection-start="449" selection-end="449" vertical-scroll-proportion="-4.576923" vertical-offset="255" max-vertical-offset="612">
+        <state line="22" column="44" selection-start="451" selection-end="451" vertical-scroll-proportion="-4.576923" vertical-offset="255" max-vertical-offset="612">
           <folding>
             <element signature="e#6#84#0" expanded="true" />
           </folding>
@@ -755,7 +751,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="7" selection-start="426" selection-end="426" vertical-scroll-proportion="0.77936965" vertical-offset="0" max-vertical-offset="391">
+        <state line="16" column="7" selection-start="426" selection-end="426" vertical-scroll-proportion="-10.461538" vertical-offset="0" max-vertical-offset="391">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="1" selection-start="880" selection-end="880" vertical-scroll-proportion="0.9025788" vertical-offset="144" max-vertical-offset="561">
           <folding />
         </state>
       </provider>
