@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b3f8b531-6b0d-4021-a655-2eb1950214cf" name="Default" comment="tweaking&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/def.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.php" afterPath="$PROJECT_DIR$/test.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/wikidrain.iml" afterPath="$PROJECT_DIR$/.idea/wikidrain.iml" />
+    <list default="true" id="b3f8b531-6b0d-4021-a655-2eb1950214cf" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/def.php" afterPath="$PROJECT_DIR$/def.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path=".idea/*" />
@@ -56,19 +54,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="5" selection-start="172" selection-end="172" vertical-scroll-proportion="-5.576923" vertical-offset="25" max-vertical-offset="374">
+            <state line="16" column="7" selection-start="426" selection-end="426" vertical-scroll-proportion="0.77936965" vertical-offset="0" max-vertical-offset="391">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="def.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="def.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/def.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="0" selection-start="522" selection-end="522" vertical-scroll-proportion="1.0716332" vertical-offset="0" max-vertical-offset="544">
+            <state line="22" column="44" selection-start="449" selection-end="449" vertical-scroll-proportion="-4.576923" vertical-offset="255" max-vertical-offset="612">
               <folding>
                 <element signature="e#6#84#0" expanded="true" />
               </folding>
@@ -118,8 +116,8 @@
         <option value="$PROJECT_DIR$/search.php" />
         <option value="$PROJECT_DIR$/includes/wikidrain.class.php" />
         <option value="$PROJECT_DIR$/test.php" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/def.php" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -556,7 +554,11 @@
       <created>1392680758881</created>
       <updated>1392680758881</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="tweaking&#10;">
+      <created>1396644608662</created>
+      <updated>1396644608662</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -742,19 +744,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="5" selection-start="172" selection-end="172" vertical-scroll-proportion="-5.576923" vertical-offset="25" max-vertical-offset="374">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/def.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="0" selection-start="522" selection-end="522" vertical-scroll-proportion="1.0716332" vertical-offset="0" max-vertical-offset="544">
+        <state line="22" column="44" selection-start="449" selection-end="449" vertical-scroll-proportion="-4.576923" vertical-offset="255" max-vertical-offset="612">
           <folding>
             <element signature="e#6#84#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="7" selection-start="426" selection-end="426" vertical-scroll-proportion="0.77936965" vertical-offset="0" max-vertical-offset="391">
+          <folding />
         </state>
       </provider>
     </entry>
