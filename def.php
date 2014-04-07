@@ -12,6 +12,8 @@ $wiki = new wikidrain('ok');
 
 if (isset($_GET['x'])) {
     $x = $_GET['x'];
+} else {
+    $x = 3;
 }
 
 if (isset($_GET['terms'])) {
@@ -21,7 +23,7 @@ if (isset($_GET['terms'])) {
     foreach ($array as $term) {
         $term = trim($term);
         $results = $wiki->Search($term, $x);
-        print "==========" . $term;
+        print "==========" . $term . "==========";
         print '<p></p>';
         foreach ($results as $res) {
             print $res['title'] . ": " . $res['description'];

@@ -4,7 +4,7 @@
  *
  * @package    wikidrain
  * @copyright  Copyright (c) 2013-2014 Andrew Breksa <abreksa4@gmail.com>
- * @license    https://www.gnu.org/licenses/old-licenses/fdl-1.2.txt   LGPL License
+ * @license    https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt  LGPL License
  * @version    Release: @1.0@
  * @link       https://github.com/abreksa4/wikidrain
  * @since      Class available since Release 1.0
