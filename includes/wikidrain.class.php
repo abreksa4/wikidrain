@@ -1,4 +1,5 @@
 <?php
+
 /**
  * wikidrain: A simple PHP wrapper for the WikiMedia API centralized around querying Wikipedia articles
  *
