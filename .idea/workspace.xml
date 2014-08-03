@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b3f8b531-6b0d-4021-a655-2eb1950214cf" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/def.php" afterPath="$PROJECT_DIR$/def.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/wikidrain.class.php" afterPath="$PROJECT_DIR$/includes/wikidrain.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api.php" afterPath="$PROJECT_DIR$/api.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path=".idea/*" />
@@ -33,51 +32,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
+      <file leaf-file-name="api.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/api.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="2" selection-start="1404" selection-end="1404" vertical-scroll-proportion="0.0" vertical-offset="731" max-vertical-offset="1615">
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="1" selection-start="880" selection-end="880" vertical-scroll-proportion="0.0" vertical-offset="144" max-vertical-offset="561">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="7" selection-start="426" selection-end="426" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="391">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="def.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/def.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="11" selection-start="224" selection-end="224" vertical-scroll-proportion="-9.807693" vertical-offset="0" max-vertical-offset="646">
-              <folding>
-                <element signature="e#6#84#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="wikidrain.class.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/includes/wikidrain.class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="69" selection-start="285" selection-end="285" vertical-scroll-proportion="0.1906542" vertical-offset="0" max-vertical-offset="4267">
+            <state line="9" column="5" selection-start="313" selection-end="313" vertical-scroll-proportion="0.17307693" vertical-offset="0" max-vertical-offset="884">
               <folding />
             </state>
           </provider>
@@ -109,15 +67,15 @@
         <option value="$PROJECT_DIR$/wikidrain_portal.php" />
         <option value="$PROJECT_DIR$/example.php" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/api.php" />
         <option value="$PROJECT_DIR$/includes/wikidrain_json.class.php" />
         <option value="$PROJECT_DIR$/test_json.php" />
         <option value="$PROJECT_DIR$/includes/wikidrain2.class.php" />
         <option value="$PROJECT_DIR$/search.php" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/test.php" />
         <option value="$PROJECT_DIR$/def.php" />
         <option value="$PROJECT_DIR$/includes/wikidrain.class.php" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/api.php" />
       </list>
     </option>
   </component>
@@ -136,8 +94,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="754" />
+    <option name="width" value="1936" />
+    <option name="height" value="1066" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -165,7 +123,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -200,6 +157,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -218,17 +176,7 @@
     <property name="FullScreen" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
-  </component>
-  <component name="PublishConfig" serverName="pi0" serverId="11c37019-950a-4175-9d85-bb69ba9298f9">
-    <servers>
-      <server id="11c37019-950a-4175-9d85-bb69ba9298f9">
-        <serverdata>
-          <mappings>
-            <mapping deploy="/var/www/proj/wikidrain" local="$PROJECT_DIR$" web="/proj/wikidrain" />
-          </mappings>
-        </serverdata>
-      </server>
-    </servers>
+    <property name="LayoutCode.rearrangeEntriesPHP" value="false" />
   </component>
   <component name="RunManager" selected="PHPUnit.wikidrain">
     <configuration default="false" name="test.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/test.php">
@@ -566,7 +514,11 @@
       <created>1396645933814</created>
       <updated>1396645933814</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="Cleaned up">
+      <created>1407053156537</created>
+      <updated>1407053156537</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -590,16 +542,17 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23188406" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20735785" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294702" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22121212" sideWeight="0.67161715" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16032211" sideWeight="0.6714976" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24924242" sideWeight="0.6705686" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25452608" sideWeight="0.6705686" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39966556" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -609,14 +562,18 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32838285" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283582" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294702" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32943144" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39900663" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -625,7 +582,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="added parseSections&#10;" />
     <MESSAGE value="added parseText&#10;" />
     <MESSAGE value="added check to remove the &quot;See also&quot;, &quot;References&quot;, and &quot;External links&quot; sections &#10;" />
     <MESSAGE value="Integrated the xml_parse class &amp; updated readme.md" />
@@ -650,13 +606,55 @@
     <MESSAGE value="made prepTitle mandatory&#10;" />
     <MESSAGE value="tweaking&#10;" />
     <MESSAGE value="added a basic search page for my girlfriend's culinary homework" />
-    <option name="LAST_COMMIT_MESSAGE" value="added a basic search page for my girlfriend's culinary homework" />
+    <MESSAGE value="Cleaned up" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cleaned up" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="2" selection-start="1404" selection-end="1404" vertical-scroll-proportion="0.0" vertical-offset="728" max-vertical-offset="1615">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/wikidrain.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="124" column="35" selection-start="3599" selection-end="3599" vertical-scroll-proportion="0.0" vertical-offset="1473" max-vertical-offset="4284">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="1" selection-start="619" selection-end="619" vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="442">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="2" selection-start="1404" selection-end="1404" vertical-scroll-proportion="0.0" vertical-offset="731" max-vertical-offset="1615">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/wikidrain.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="69" selection-start="212" selection-end="212" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="4284">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/includes/wikidrain.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="176" column="53" selection-start="5702" selection-end="5702" vertical-scroll-proportion="0.0" vertical-offset="1370" max-vertical-offset="3330">
@@ -665,18 +663,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="0" selection-start="2188" selection-end="2188" vertical-scroll-proportion="0.0" vertical-offset="1242" max-vertical-offset="1404">
-          <folding />
-        </state>
-      </provider>
       <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="36" selection-start="375" selection-end="375" vertical-scroll-proportion="0.0" vertical-offset="198" max-vertical-offset="558">
+        <state line="69" column="0" selection-start="2188" selection-end="2188" vertical-scroll-proportion="0.0" vertical-offset="1242" max-vertical-offset="1404">
           <folding />
         </state>
       </provider>
@@ -688,19 +679,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="1" selection-start="306" selection-end="306" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="288" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state line="72" column="17" selection-start="2259" selection-end="2259" vertical-scroll-proportion="0.0" vertical-offset="851" max-vertical-offset="1404">
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
@@ -718,53 +704,37 @@
         <state line="10" column="0" selection-start="484" selection-end="484" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="288" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
+    <entry file="file://$PROJECT_DIR$/api.old.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="1" selection-start="306" selection-end="306" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="288" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="22" selection-start="0" selection-end="1075" vertical-scroll-proportion="0.07220217" vertical-offset="158" max-vertical-offset="738" />
+        <state line="34" column="1" selection-start="48" selection-end="1074" vertical-scroll-proportion="-22.23077" vertical-offset="0" max-vertical-offset="697">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="2" selection-start="1404" selection-end="1404" vertical-scroll-proportion="0.0" vertical-offset="731" max-vertical-offset="1615">
-          <folding />
-        </state>
-      </provider>
       <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="7" selection-start="426" selection-end="426" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="391">
-          <folding />
-        </state>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="1" selection-start="880" selection-end="880" vertical-scroll-proportion="0.0" vertical-offset="144" max-vertical-offset="561">
+        <state line="43" column="2" selection-start="1404" selection-end="1404" vertical-scroll-proportion="0.82412624" vertical-offset="0" max-vertical-offset="1615">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/includes/wikidrain.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="69" selection-start="285" selection-end="285" vertical-scroll-proportion="0.1906542" vertical-offset="0" max-vertical-offset="4267">
+        <state line="124" column="35" selection-start="3599" selection-end="3599" vertical-scroll-proportion="0.7273769" vertical-offset="1473" max-vertical-offset="4284">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/def.php">
+    <entry file="file://$PROJECT_DIR$/api.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="11" selection-start="224" selection-end="224" vertical-scroll-proportion="-9.807693" vertical-offset="0" max-vertical-offset="646">
-          <folding>
-            <element signature="e#6#84#0" expanded="true" />
-          </folding>
+        <state line="9" column="5" selection-start="313" selection-end="313" vertical-scroll-proportion="0.17307693" vertical-offset="0" max-vertical-offset="884">
+          <folding />
         </state>
       </provider>
     </entry>
