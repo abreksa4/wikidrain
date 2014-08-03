@@ -122,7 +122,7 @@ class wikidrain
         $result = explode("\n", $result);
         $result = array_filter(array_map('trim', $result));
         $this->release();
-        return $result;
+        return json_encode($result);
 
     }
 
@@ -192,7 +192,7 @@ class wikidrain
             );
             $this->_count++;
         }
-        return $this->_data;
+        return json_encode($this->_data);
     }
 
     /**
