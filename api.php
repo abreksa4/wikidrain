@@ -1,5 +1,6 @@
 <?php
-while (isset($_GET['action']) & isset($_GET['query']) & isset($_GET['useragent'])) {
+include('includes/wikidrain.class.php');
+while (isset($_GET['action']) && isset($_GET['query']) && isset($_GET['useragent'])) {
     $action = $_GET['action'];
     $query = $_GET['query'];
     $useragent = $_GET['useragent'];
