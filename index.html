@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <title>Wikidrain by abreksa4</title>
+  </head>
+
+  <body>
+    <div id="container">
+      <div class="inner">
+
+        <header>
+          <h1>Wikidrain</h1>
+          <h2>A simple PHP wrapper for the WikiMedia API centralized around querying Wikipedia articles </h2>
+        </header>
+
+        <section id="downloads" class="clearfix">
+          <a href="https://github.com/abreksa4/wikidrain/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
+          <a href="https://github.com/abreksa4/wikidrain/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
+          <a href="https://github.com/abreksa4/wikidrain" id="view-on-github" class="button"><span>View on GitHub</span></a>
+        </section>
+
+        <hr>
+
+        <section id="main_content">
+          <h1>
+<a id="wikidrain" class="anchor" href="#wikidrain" aria-hidden="true"><span class="octicon octicon-link"></span></a>wikidrain</h1>
+
+<p>A PHP wrapper for the WikiMedia API centralized around querying Wikipedia articles.</p>
+
+<p>There are many php classes, indeed complete frameworks, dedicated to the WikiMedia
+API. But none of them are easy to implement, are accessible to those just learning
+PHP, or focus on simply querying data from Wikipedia.  The goal of the wikidrain 
+project is to develop a production-quality PHP library dedicated to easy, simple, 
+and efficient querying of Wikipedia articles.</p>
+
+<h1>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage:</h1>
+
+<p>wikidrain is very simple to use, just make a new instance of wikidrain:</p>
+
+<div class="highlight highlight-php"><pre><span class="pl-pse">&lt;?php</span><span class="pl-s2"></span>
+<span class="pl-s2">    <span class="pl-vo">$wiki</span> <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-s3">wikidrain</span>(<span class="pl-s1"><span class="pl-pds">'</span>wikidrain/1.0 (http://www.example.com/)<span class="pl-pds">'</span></span>);</span>
+<span class="pl-s2"></span><span class="pl-pse"><span class="pl-s2">?</span>&gt;</span></pre></div>
+
+<p>NOTE: You must supply your user-agent info, here the example header is:
+      'wikidrain/1.0 (<a href="http://www.example.com/">http://www.example.com/</a>)'</p>
+
+<p>To search wikipedia for articles, use the Search method:
+This returns a multidimensional array...</p>
+
+<div class="highlight highlight-php"><pre><span class="pl-pse">&lt;?php</span><span class="pl-s2"></span>
+<span class="pl-s2">    <span class="pl-vo">$wiki</span> <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-s3">wikidrain</span>(<span class="pl-s1"><span class="pl-pds">'</span>wikidrain/1.0 (http://www.example.com/)<span class="pl-pds">'</span></span>);</span>
+<span class="pl-s2">    <span class="pl-vo">$result</span> <span class="pl-k">=</span> <span class="pl-vo">$wiki</span><span class="pl-k">-&gt;</span>Search(<span class="pl-s1"><span class="pl-pds">'</span>API<span class="pl-pds">'</span></span>);</span>
+<span class="pl-s2"></span><span class="pl-pse"><span class="pl-s2">?</span>&gt;</span></pre></div>
+
+<p>To get the sections of a wikipedia page, use the getSections method:
+This also returns a multidimensional array...</p>
+
+<div class="highlight highlight-php"><pre><span class="pl-pse">&lt;?php</span><span class="pl-s2"></span>
+<span class="pl-s2">    <span class="pl-vo">$wiki</span> <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-s3">wikidrain</span>(<span class="pl-s1"><span class="pl-pds">'</span>wikidrain/1.0 (http://www.example.com/)<span class="pl-pds">'</span></span>);</span>
+<span class="pl-s2">    <span class="pl-vo">$result</span> <span class="pl-k">=</span> <span class="pl-vo">$wiki</span><span class="pl-k">-&gt;</span>getSections(<span class="pl-s1"><span class="pl-pds">'</span>API<span class="pl-pds">'</span></span>);</span>
+<span class="pl-s2"></span><span class="pl-pse"><span class="pl-s2">?</span>&gt;</span></pre></div>
+
+<p>NOTE: Wikidrain does not include any error checking/verification that the article
+      exists, so be sure to only request the sections/text of articles that were
+      returned by the Search() method...</p>
+
+<p>To get the text of a section from a wikipedia page, use the getText
+method.
+This returns text...</p>
+
+<div class="highlight highlight-php"><pre><span class="pl-pse">&lt;?php</span><span class="pl-s2"></span>
+<span class="pl-s2">    <span class="pl-vo">$wiki</span> <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-s3">wikidrain</span>(<span class="pl-s1"><span class="pl-pds">'</span>wikidrain/1.0 (http://www.example.com/)<span class="pl-pds">'</span></span>);</span>
+<span class="pl-s2">    <span class="pl-vo">$result</span> <span class="pl-k">=</span> <span class="pl-vo">$wiki</span><span class="pl-k">-&gt;</span>getText(<span class="pl-s1"><span class="pl-pds">'</span>API<span class="pl-pds">'</span></span>, <span class="pl-s1"><span class="pl-pds">'</span>0<span class="pl-pds">'</span></span>);</span>
+<span class="pl-s2"></span><span class="pl-pse"><span class="pl-s2">?</span>&gt;</span></pre></div>
+
+<p>NOTE: Again, wikidrain does not include any error checking/verification to determine
+      if an article or section exists, so make sure to only request data from pages/
+      sections returned by the Search() and getSections() methods...</p>
+
+<p>To get the list of articles listed in the 'See also' section, use the getRelated
+method
+This returns an array...</p>
+
+<div class="highlight highlight-php"><pre><span class="pl-pse">&lt;?php</span><span class="pl-s2"></span>
+<span class="pl-s2">    <span class="pl-vo">$wiki</span> <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-s3">wikidrain</span>(<span class="pl-s1"><span class="pl-pds">'</span>wikidrain/1.0 (http://www.example.com/)<span class="pl-pds">'</span></span>);</span>
+<span class="pl-s2">    <span class="pl-vo">$wiki</span><span class="pl-k">-&gt;</span>getRelated(<span class="pl-s1"><span class="pl-pds">'</span>API<span class="pl-pds">'</span></span>);</span>
+<span class="pl-s2"></span><span class="pl-pse"><span class="pl-s2">?</span>&gt;</span></pre></div>
+
+<h1>
+<a id="todo" class="anchor" href="#todo" aria-hidden="true"><span class="octicon octicon-link"></span></a>TODO:</h1>
+
+<p>Currently, the objectives are as follows:</p>
+
+<ol>
+<li><p>Anything to put less strain on the wikipedia servers</p></li>
+<li><p>A method to return the wikipedia donation banner</p></li>
+<li><p>Error checking</p></li>
+<li><p>Any improvement to the parseText method</p></li>
+</ol>
+        </section>
+
+        <footer>
+          Wikidrain is maintained by <a href="https://github.com/abreksa4">abreksa4</a><br>
+          This page was generated by <a href="https://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
+        </footer>
+
+        
+      </div>
+    </div>
+  </body>
+</html>
