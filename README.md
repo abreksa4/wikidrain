@@ -22,6 +22,7 @@ wikidrain is very simple to use, just make a new instance of wikidrain:
 ```
 
 NOTE: You must supply your user-agent info, here the example header is:
+      
       'wikidrain/1.0 (http://www.example.com/)'
 
 To search wikipedia for articles, use the Search method:
