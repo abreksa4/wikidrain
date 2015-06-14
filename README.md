@@ -30,7 +30,8 @@ This returns a multidimensional array...
 ```php
 <?php
     $wiki = new wikidrain('wikidrain/1.0 (http://www.example.com/)');
-    $result = $wiki->Search('API');
+    //The second argument allows for setting a limit on the number of results returned. 
+    $result = $wiki->Search('API', 10);
 ?>
 ```
 
