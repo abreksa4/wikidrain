@@ -45,6 +45,9 @@ class wikidrain
      */
     public function Search($query, $numResult)
     {
+        if($numResult == null){
+            $numResult = 10;
+        }
         $this->_query = htmlspecialchars($query);
         $this->_apiParams['action'] = 'opensearch';
         $this->_apiParams['params'] = array(
