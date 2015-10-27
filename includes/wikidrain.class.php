@@ -12,7 +12,7 @@
  */
 class wikidrain
 {
-    protected $_apiURL = 'http://en.wikipedia.org/w/api.php?format=xml&';
+    protected $_apiURL = 'http://{lang}.wikipedia.org/w/api.php?format=xml&';
     protected $_apiParams = array();
     protected $_query;
     protected $_userAgent;
@@ -24,15 +24,18 @@ class wikidrain
     //Shared vars
     protected $_string;
     protected $_json;
+    protected $_cache = array();
 
-    function __construct($userAgent)
+    function __construct($userAgent, $language = 'en')
     {
         $this->_userAgent = $userAgent;
+        str_replace('{lang}', $language, $this->_apiURL);
     }
 
     function __destruct()
     {
         $this->release();
+        $this->_cache = NULL;
     }
 
     /**
@@ -144,6 +147,16 @@ class wikidrain
     }
 
     /**
+     * Releases the cache property on-demand
+     *
+     * @author Gonçalo Sá <goncalo05@gmail.com>
+     */
+    private function release_cache()
+    {
+        $this->_cache = NULL;
+    }
+
+    /**
      *
      * Preps titles for use
      *
@@ -167,12 +180,16 @@ class wikidrain
     {
         $params = implode('&', $this->_apiParams['params']);
         $url = "{$this->_apiURL}action={$this->_apiParams['action']}&{$params}";
-        $curl = curl_init();
-        curl_setopt($curl, CURLOPT_URL, $url);
-        curl_setopt($curl, CURLOPT_RETURNTRANSFER, TRUE);
-        curl_setopt($curl, CURLOPT_USERAGENT, $this->_userAgent);
-        $result = curl_exec($curl);
-        return $result;
+        if(!isset($this->_cache[$url])) {
+            $curl = curl_init();
+            curl_setopt($curl, CURLOPT_URL, $url);
+            curl_setopt($curl, CURLOPT_RETURNTRANSFER, TRUE);
+            curl_setopt($curl, CURLOPT_USERAGENT, $this->_userAgent);
+            $result = curl_exec($curl);
+            $this->_cache[$url] = $result;
+            return $result;
+        }
+        return $this->_cache[$url];
     }
 
     //XML parsing methods

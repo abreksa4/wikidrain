@@ -24,6 +24,18 @@ wikidrain is very simple to use, just make a new instance of wikidrain:
 NOTE: You must supply your user-agent info, here the example header is:
       
       'wikidrain/1.0 (http://www.example.com/)'
+      
+You can also specify a two-letter country code to search Wikipedia in your language:
+
+```php
+<?php
+    $wiki = new wikidrain('wikidrain/1.0 (http://www.example.com/)', 'pt');
+?>
+```
+
+NOTE: You can find the country code in the link of wikipedia when you visit wikipedia.org in your browser:
+      
+      'http://*pt*.wikipedia.org/'
 
 To search wikipedia for articles, use the Search method:
 This returns a multidimensional array...
@@ -73,6 +85,26 @@ This returns an array...
 <?php
     $wiki = new wikidrain('wikidrain/1.0 (http://www.example.com/)');
     $wiki->getRelated('API');
+?>
+```
+
+The class caches results so it won't query wikipedia twice for the same data.
+It will clean up after itself but you may want to release the cache before.
+If you want to clear the cache on-demand to spare memory you can:
+
+```php
+<?php
+    $wiki = new wikidrain('wikidrain/1.0 (http://www.example.com/)');
+    
+    $result = $wiki->getText('API', '0'); //First call is cached
+    
+    //Do stuff with the result...
+    
+    $result = $wiki->getText('API', '0'); //So now we don't even make a request
+    
+    //Do more stuff with the result...
+    
+    $wiki->release_cache(); //Release the cache from memory
 ?>
 ```
 
