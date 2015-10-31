@@ -29,7 +29,7 @@ class wikidrain
     function __construct($userAgent, $language = 'en')
     {
         $this->_userAgent = $userAgent;
-        str_replace('{lang}', $language, $this->_apiURL);
+        $this->_apiURL = str_replace('{lang}', $language, $this->_apiURL);
     }
 
     function __destruct()
