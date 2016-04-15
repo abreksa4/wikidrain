@@ -9,6 +9,7 @@ PHP, or focus on simply querying data from Wikipedia.  The goal of the wikidrain
 project is to develop a production-quality PHP library dedicated to easy, simple, 
 and efficient querying of Wikipedia articles.
 
+To use this class with a custom wikimedia installation, you need to install OpenSearchXml which isn't included in the default mediawiki download.
 
 Usage:
 ===================================================================================
