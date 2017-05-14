@@ -8,20 +8,41 @@ namespace AndrewBreksa\Wikidrain;
 
 use GuzzleHttp\Psr7\Request;
 
+/**
+ * Class Client
+ * @package AndrewBreksa\Wikidrain
+ */
 class Client {
 
 	/**
 	 * @var \GuzzleHttp\ClientInterface
 	 */
 	private $httpClient;
+	/**
+	 * @var string
+	 */
 	private $lang          = 'en';
+	/**
+	 * @var string
+	 */
 	private $useragent     = 'wikidrain/2.0';
+	/**
+	 * @var string
+	 */
 	private $endpoint      = 'https://{lang}.wikipedia.org/w/api.php';
+	/**
+	 * @var array
+	 */
 	private $default_query = [
 		'format'        => 'json',
 		'formatversion' => 2,
 	];
 
+	/**
+	 * Client constructor.
+	 *
+	 * @param null $httpClient
+	 */
 	public function __construct($httpClient = NULL) {
 		if (is_null($httpClient)) {
 			$this->httpClient = new \GuzzleHttp\Client();
@@ -44,6 +65,11 @@ class Client {
 		return $this->get($curr_params);
 	}
 
+	/**
+	 * @param array $parameters
+	 *
+	 * @return mixed
+	 */
 	private function get(array $parameters) {
 		$options = array_merge($parameters, $this->getDefaultQuery());
 		$uri = $this->getGeneratedURI() . '?' . http_build_query($options);
@@ -72,6 +98,9 @@ class Client {
 		return $this;
 	}
 
+	/**
+	 * @return mixed
+	 */
 	public function getGeneratedURI() {
 		return str_replace("{lang}", $this->getLang(), $this->getEndpoint());
 	}
@@ -148,6 +177,13 @@ class Client {
 		return $this;
 	}
 
+	/**
+	 * @param       $titles
+	 * @param array $properties
+	 * @param array $parameters
+	 *
+	 * @return mixed
+	 */
 	public function getPagePropertiesByTitles($titles, array $properties, $parameters = []) {
 		$curr_params = array_replace([
 			'prop'   => implode('|', $properties),
@@ -158,6 +194,13 @@ class Client {
 		return $this->get($curr_params);
 	}
 
+	/**
+	 * @param       $pageIds
+	 * @param array $properties
+	 * @param array $parameters
+	 *
+	 * @return mixed
+	 */
 	public function getPagePropertiesByPageIds($pageIds, array $properties, $parameters = []) {
 		$curr_params = array_replace([
 			'prop'    => implode('|', $properties),
@@ -168,6 +211,13 @@ class Client {
 		return $this->get($curr_params);
 	}
 
+	/**
+	 * @param       $titles
+	 * @param array $lists
+	 * @param array $parameters
+	 *
+	 * @return mixed
+	 */
 	public function getPageListByTitles($titles, array $lists, $parameters = []) {
 		$curr_params = array_replace([
 			'list'   => implode('|', $lists),
@@ -178,6 +228,13 @@ class Client {
 		return $this->get($curr_params);
 	}
 
+	/**
+	 * @param       $pageIds
+	 * @param array $lists
+	 * @param array $parameters
+	 *
+	 * @return mixed
+	 */
 	public function getPageListByPageIds($pageIds, array $lists, $parameters = []) {
 		$curr_params = array_replace([
 			'list'    => implode('|', $lists),
@@ -188,6 +245,13 @@ class Client {
 		return $this->get($curr_params);
 	}
 
+	/**
+	 * @param       $title
+	 * @param array $properties
+	 * @param array $parameters
+	 *
+	 * @return mixed
+	 */
 	public function getParsedPropertiesByTitle($title, array $properties, $parameters = []) {
 		$curr_params = array_replace([
 			'prop'   => implode('|', $properties),
@@ -198,6 +262,13 @@ class Client {
 		return $this->get($curr_params);
 	}
 
+	/**
+	 * @param       $pageId
+	 * @param array $properties
+	 * @param array $parameters
+	 *
+	 * @return mixed
+	 */
 	public function getParsedPropertiesByPageId($pageId, array $properties, $parameters = []) {
 		$curr_params = array_replace([
 			'prop'   => implode('|', $properties),
