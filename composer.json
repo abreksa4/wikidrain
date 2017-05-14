@@ -1,0 +1,20 @@
+{
+  "name": "andrewbreksa/wikidrain",
+  "authors": [
+    {
+      "name": "Andrew Breksa",
+      "email": "andrew@andrewbreksa.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require": {
+    "php-http/httplug": "^1.1",
+    "jelix/wikirenderer": "^3.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "AndrewBreksa\\": "src/AndrewBreksa"
+    }
+  }
+}
