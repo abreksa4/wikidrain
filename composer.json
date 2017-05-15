@@ -15,5 +15,8 @@
     "psr-4": {
       "AndrewBreksa\\": "src/AndrewBreksa"
     }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^6.1"
   }
 }
