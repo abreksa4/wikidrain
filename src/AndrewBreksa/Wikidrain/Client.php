@@ -57,9 +57,10 @@ class Client {
 	 */
 	public function search($query, $parameters = []) {
 		$curr_params = array_merge([
-			'action'   => 'query',
-			'list'     => 'search',
-			'srsearch' => $query,
+			'action'       => 'query',
+			'list'         => 'search',
+			'srsearch'     => $query,
+			'indexpageids' => '',
 		], $parameters);
 
 		return $this->get($curr_params);
@@ -184,12 +185,11 @@ class Client {
 	 *
 	 * @return mixed
 	 */
-	public function getPagePropertiesByTitles($titles, array $properties, $parameters = []) {
+	public function getPagePropertiesByTitles($titles, array $properties = [], $parameters = []) {
 		$curr_params = array_replace([
-			'prop'   => implode('|', $properties),
 			'titles' => implode('|', $titles),
 			'action' => 'query',
-		], $parameters);
+		], (empty($properties) ? [] : ['prop' => implode('|', $properties)]), $parameters);
 
 		return $this->get($curr_params);
 	}
@@ -201,12 +201,11 @@ class Client {
 	 *
 	 * @return mixed
 	 */
-	public function getPagePropertiesByPageIds($pageIds, array $properties, $parameters = []) {
+	public function getPagePropertiesByPageIds($pageIds, array $properties = [], $parameters = []) {
 		$curr_params = array_replace([
-			'prop'    => implode('|', $properties),
 			'pageids' => implode('|', $pageIds),
 			'action'  => 'query',
-		], $parameters);
+		], (empty($properties) ? [] : ['prop' => implode('|', $properties)]), $parameters);
 
 		return $this->get($curr_params);
 	}
@@ -218,12 +217,11 @@ class Client {
 	 *
 	 * @return mixed
 	 */
-	public function getPageListByTitles($titles, array $lists, $parameters = []) {
+	public function getPageListByTitles($titles, array $lists = [], $parameters = []) {
 		$curr_params = array_replace([
-			'list'   => implode('|', $lists),
 			'titles' => implode('|', $titles),
 			'action' => 'query',
-		], $parameters);
+		], (empty($properties) ? [] : ['list' => implode('|', $lists)]), $parameters);
 
 		return $this->get($curr_params);
 	}
@@ -235,12 +233,11 @@ class Client {
 	 *
 	 * @return mixed
 	 */
-	public function getPageListByPageIds($pageIds, array $lists, $parameters = []) {
+	public function getPageListByPageIds($pageIds, array $lists = [], $parameters = []) {
 		$curr_params = array_replace([
-			'list'    => implode('|', $lists),
 			'pageids' => implode('|', $pageIds),
 			'action'  => 'query',
-		], $parameters);
+		], (empty($properties) ? [] : ['list' => implode('|', $lists)]), $parameters);
 
 		return $this->get($curr_params);
 	}
@@ -252,12 +249,11 @@ class Client {
 	 *
 	 * @return mixed
 	 */
-	public function getParsedPropertiesByTitle($title, array $properties, $parameters = []) {
+	public function getParsedPropertiesByTitle($title, array $properties = [], $parameters = []) {
 		$curr_params = array_replace([
-			'prop'   => implode('|', $properties),
 			'page'   => $title,
 			'action' => 'parse',
-		], $parameters);
+		], (empty($properties) ? [] : ['prop' => implode('|', $properties)]), $parameters);
 
 		return $this->get($curr_params);
 	}
@@ -269,12 +265,11 @@ class Client {
 	 *
 	 * @return mixed
 	 */
-	public function getParsedPropertiesByPageId($pageId, array $properties, $parameters = []) {
+	public function getParsedPropertiesByPageId($pageId, array $properties = [], $parameters = []) {
 		$curr_params = array_replace([
-			'prop'   => implode('|', $properties),
 			'pageid' => $pageId,
 			'action' => 'parse',
-		], $parameters);
+		], (empty($properties) ? [] : ['prop' => implode('|', $properties)]), $parameters);
 
 		return $this->get($curr_params);
 	}
